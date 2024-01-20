@@ -1,0 +1,2578 @@
+2024-01-20 04:01:44 ["64c8v0g2us5g8"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:01:44 ["64c8v0g2us5g8"] service NOTICE: Query parameter (html special chars encoded) 'service': flightLabs/findHotels
+2024-01-20 04:01:44 ["64c8v0g2us5g8"] Utils WARNING: service flightLabs/findHotels not found.
+2024-01-20 04:01:44 ["64c8v0g2us5g8"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:01:44 ["8v4mgneg5lmac"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:01:44 ["8v4mgneg5lmac"] service NOTICE: Query parameter (html special chars encoded) 'service': flightLabs/findHotels
+2024-01-20 04:01:44 ["8v4mgneg5lmac"] Utils WARNING: service flightLabs/findHotels not found.
+2024-01-20 04:01:44 ["8v4mgneg5lmac"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:02:57 ["c3u18qc5tqra1"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:02:57 ["c3u18qc5tqra1"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:02:57 ["c3u18qc5tqra1"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:02:57 ["c3u18qc5tqra1"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:02:57 ["c3u18qc5tqra1"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:02:57 ["c3u18qc5tqra1"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:02:57 ["c3u18qc5tqra1"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:02:57 ["701ujc5tffq43"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:02:57 ["701ujc5tffq43"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:02:57 ["701ujc5tffq43"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:02:57 ["701ujc5tffq43"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:02:57 ["701ujc5tffq43"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:02:57 ["701ujc5tffq43"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:02:57 ["701ujc5tffq43"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:02:57 ["701ujc5tffq43"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:02:58 ["701ujc5tffq43"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:02:58 ["701ujc5tffq43"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:03:01 ["m7st780s1r58k"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:03:01 ["m7st780s1r58k"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:03:01 ["m7st780s1r58k"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:03:01 ["m7st780s1r58k"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:03:01 ["m7st780s1r58k"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:03:01 ["m7st780s1r58k"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:03:01 ["m7st780s1r58k"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:03:01 ["p30p3kfia5fhe"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:03:02 ["p30p3kfia5fhe"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:03:02 ["p30p3kfia5fhe"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:03 ["khkaqk7ulfum8"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:03 ["khkaqk7ulfum8"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:03 ["khkaqk7ulfum8"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:03 ["khkaqk7ulfum8"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:03 ["khkaqk7ulfum8"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:03 ["khkaqk7ulfum8"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:03 ["khkaqk7ulfum8"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:03 ["9gn4ejpvi7fi8"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:04 ["9gn4ejpvi7fi8"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:04 ["9gn4ejpvi7fi8"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:05 ["sjjslmog8ch2t"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:05 ["sjjslmog8ch2t"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:05 ["sjjslmog8ch2t"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:05 ["sjjslmog8ch2t"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:05 ["sjjslmog8ch2t"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:05 ["sjjslmog8ch2t"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:05 ["sjjslmog8ch2t"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:05 ["2ount014jdm8j"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:05 ["2ount014jdm8j"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:05 ["2ount014jdm8j"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:05 ["2ount014jdm8j"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:05 ["2ount014jdm8j"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:05 ["2ount014jdm8j"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:05 ["2ount014jdm8j"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:05 ["2ount014jdm8j"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:05 ["2ount014jdm8j"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:05 ["2ount014jdm8j"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:12 ["qu33votsav7pl"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:12 ["qu33votsav7pl"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:12 ["qu33votsav7pl"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:12 ["qu33votsav7pl"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:12 ["qu33votsav7pl"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:12 ["qu33votsav7pl"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:12 ["qu33votsav7pl"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:12 ["vb5k6tafbafub"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:12 ["vb5k6tafbafub"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:12 ["vb5k6tafbafub"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:12 ["vb5k6tafbafub"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:12 ["vb5k6tafbafub"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:12 ["vb5k6tafbafub"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:13 ["vb5k6tafbafub"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:13 ["vb5k6tafbafub"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:13 ["vb5k6tafbafub"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:13 ["vb5k6tafbafub"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:13 ["eljo810dqliap"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:13 ["eljo810dqliap"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:13 ["eljo810dqliap"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:13 ["eljo810dqliap"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:13 ["eljo810dqliap"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:13 ["eljo810dqliap"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:13 ["eljo810dqliap"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:13 ["d139qnojb7ndo"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:13 ["d139qnojb7ndo"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:13 ["d139qnojb7ndo"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:13 ["d139qnojb7ndo"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:13 ["d139qnojb7ndo"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:13 ["d139qnojb7ndo"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:13 ["d139qnojb7ndo"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:13 ["d139qnojb7ndo"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:13 ["d139qnojb7ndo"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:13 ["d139qnojb7ndo"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:19 ["qf292ntebap9n"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:19 ["qf292ntebap9n"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:19 ["qf292ntebap9n"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:19 ["qf292ntebap9n"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:19 ["qf292ntebap9n"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:19 ["qf292ntebap9n"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:19 ["qf292ntebap9n"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:19 ["p5q2pn64spvrm"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:27 ["1r5dkltddpb15"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:27 ["1r5dkltddpb15"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:27 ["1r5dkltddpb15"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:27 ["1r5dkltddpb15"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:27 ["1r5dkltddpb15"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:27 ["1r5dkltddpb15"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:27 ["1r5dkltddpb15"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:06:28 ["6pcrpsvd3aup5"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:30 ["t2i3mton45gch"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:30 ["t2i3mton45gch"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:30 ["t2i3mton45gch"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:30 ["t2i3mton45gch"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:30 ["t2i3mton45gch"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:30 ["t2i3mton45gch"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:30 ["t2i3mton45gch"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:30 ["5s8k7htneo8rb"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:39 ["bjrenifkg54a9"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:39 ["bjrenifkg54a9"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:39 ["bjrenifkg54a9"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:39 ["bjrenifkg54a9"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:39 ["bjrenifkg54a9"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:39 ["bjrenifkg54a9"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:39 ["bjrenifkg54a9"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:39 ["j7kocnu1eu9ku"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:39 ["j7kocnu1eu9ku"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:39 ["j7kocnu1eu9ku"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:39 ["j7kocnu1eu9ku"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:39 ["j7kocnu1eu9ku"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:39 ["j7kocnu1eu9ku"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:40 ["j7kocnu1eu9ku"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:40 ["j7kocnu1eu9ku"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:40 ["j7kocnu1eu9ku"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:40 ["j7kocnu1eu9ku"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:40 ["47eeheqa32h4h"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:40 ["47eeheqa32h4h"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:40 ["47eeheqa32h4h"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:40 ["47eeheqa32h4h"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:40 ["47eeheqa32h4h"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:40 ["47eeheqa32h4h"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:40 ["47eeheqa32h4h"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:40 ["jhsshqh7qd693"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:40 ["jhsshqh7qd693"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:40 ["jhsshqh7qd693"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:40 ["jhsshqh7qd693"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:40 ["jhsshqh7qd693"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:40 ["jhsshqh7qd693"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:40 ["jhsshqh7qd693"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:40 ["jhsshqh7qd693"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:40 ["jhsshqh7qd693"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:40 ["jhsshqh7qd693"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:43 ["jd1d6njmbmkcm"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:43 ["jd1d6njmbmkcm"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:43 ["jd1d6njmbmkcm"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:43 ["jd1d6njmbmkcm"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:43 ["jd1d6njmbmkcm"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:43 ["jd1d6njmbmkcm"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:43 ["jd1d6njmbmkcm"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:06:43 ["fm7q3hod7m0rg"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:46 ["33aqd61t0nao6"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:46 ["33aqd61t0nao6"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:46 ["33aqd61t0nao6"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:46 ["33aqd61t0nao6"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:06:46 ["33aqd61t0nao6"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:06:46 ["33aqd61t0nao6"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:06:46 ["33aqd61t0nao6"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  latitude => 
+  array (
+    0 => 43.7101728?longitude=7.261953200000001?categorySet=9377,
+  ),
+)
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:06:46 ["l9bqjtsjivii6"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:07:43 ["0397ee299c4au"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:07:43 ["0397ee299c4au"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:07:43 ["0397ee299c4au"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:07:43 ["0397ee299c4au"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:07:43 ["0397ee299c4au"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:07:43 ["0397ee299c4au"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:07:43 ["0397ee299c4au"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:07:43 ["2pkbl736gttvv"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:07:43 ["2pkbl736gttvv"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:07:43 ["2pkbl736gttvv"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:07:43 ["2pkbl736gttvv"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:07:43 ["2pkbl736gttvv"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:07:43 ["2pkbl736gttvv"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:07:43 ["2pkbl736gttvv"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => latitude,
+  1 => longitude,
+  2 => categorySet,
+)
+but read: array (
+  categorySet => 
+  array (
+    0 => 9377,
+  ),
+)
+2024-01-20 04:07:43 ["2pkbl736gttvv"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:07:43 ["2pkbl736gttvv"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:07:43 ["2pkbl736gttvv"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:09:18 ["0q8l84fpch2db"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:09:18 ["0q8l84fpch2db"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:09:19 ["0q8l84fpch2db"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:09:19 ["0q8l84fpch2db"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:09:19 ["0q8l84fpch2db"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:09:19 ["0q8l84fpch2db"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:09:19 ["0q8l84fpch2db"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:09:19 ["1648pm2ei6rdo"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377
+2024-01-20 04:09:20 ["1648pm2ei6rdo"] service ERROR: EasyRdf\Exception: Unable to connect to corese:8081 (Connection refused) in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Http/Client.php:440
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(372): EasyRdf\Http\Client->request()
+#1 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(244): EasyRdf\Sparql\Client->executeQuery()
+#2 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#3 /var/www/html/sparql-ms/src/sparqlms/service.php(247): EasyRdf\Sparql\Client->update()
+#4 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#5 {main}
+
+2024-01-20 04:09:20 ["1648pm2ei6rdo"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 04:09:20 ["1648pm2ei6rdo"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:09:20 ["1v082ijclsvdh"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:09:20 ["1v082ijclsvdh"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:09:20 ["1v082ijclsvdh"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:09:20 ["1v082ijclsvdh"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:09:20 ["1v082ijclsvdh"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:09:20 ["1v082ijclsvdh"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:09:20 ["1v082ijclsvdh"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:09:20 ["epiiuca23clqg"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:09:20 ["epiiuca23clqg"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:09:20 ["epiiuca23clqg"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:09:20 ["epiiuca23clqg"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:09:20 ["epiiuca23clqg"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:09:20 ["epiiuca23clqg"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:09:20 ["epiiuca23clqg"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:09:20 ["epiiuca23clqg"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377
+2024-01-20 04:09:20 ["epiiuca23clqg"] service ERROR: EasyRdf\Exception: Unable to connect to corese:8081 (Connection refused) in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Http/Client.php:440
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(372): EasyRdf\Http\Client->request()
+#1 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(244): EasyRdf\Sparql\Client->executeQuery()
+#2 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#3 /var/www/html/sparql-ms/src/sparqlms/service.php(247): EasyRdf\Sparql\Client->update()
+#4 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#5 {main}
+
+2024-01-20 04:09:20 ["epiiuca23clqg"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 04:09:20 ["epiiuca23clqg"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:09:28 ["2sfd0ug86btmd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:09:28 ["2sfd0ug86btmd"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:09:28 ["2sfd0ug86btmd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:09:28 ["2sfd0ug86btmd"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:09:28 ["2sfd0ug86btmd"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:09:28 ["2sfd0ug86btmd"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:09:28 ["2sfd0ug86btmd"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377
+2024-01-20 04:09:28 ["fot7bv3aqdpjh"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:09:29 ["fot7bv3aqdpjh"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:09:29 ["fot7bv3aqdpjh"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:09:29 ["fot7bv3aqdpjh"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:10:09 ["loeg8asn6hskn"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:10:09 ["loeg8asn6hskn"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:10:09 ["loeg8asn6hskn"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:10:09 ["loeg8asn6hskn"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:10:09 ["loeg8asn6hskn"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:10:09 ["loeg8asn6hskn"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:10:09 ["loeg8asn6hskn"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:10:09 ["766nf9uqalq7r"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:10:09 ["766nf9uqalq7r"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:10:09 ["766nf9uqalq7r"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:10:09 ["766nf9uqalq7r"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:10:10 ["j6elipao41bug"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:10:10 ["j6elipao41bug"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:10:10 ["j6elipao41bug"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:10:10 ["j6elipao41bug"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:10:10 ["j6elipao41bug"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:10:10 ["j6elipao41bug"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:10:10 ["j6elipao41bug"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:10:10 ["h1smj7eatukau"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:10:10 ["h1smj7eatukau"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:10:10 ["h1smj7eatukau"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:10:10 ["h1smj7eatukau"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:10:10 ["h1smj7eatukau"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:10:10 ["h1smj7eatukau"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:10:10 ["h1smj7eatukau"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:10:10 ["h1smj7eatukau"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377
+2024-01-20 04:10:10 ["h1smj7eatukau"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:10:11 ["h1smj7eatukau"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:10:11 ["h1smj7eatukau"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:10:11 ["h1smj7eatukau"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:28 ["jesfdl030t894"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:28 ["jesfdl030t894"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:28 ["jesfdl030t894"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:28 ["jesfdl030t894"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:11:28 ["jesfdl030t894"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:11:28 ["jesfdl030t894"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:11:28 ["jesfdl030t894"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet, limit,
+)
+but read: array (
+)
+2024-01-20 04:11:28 ["uk3kh2mo21u42"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:11:29 ["uk3kh2mo21u42"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:11:29 ["uk3kh2mo21u42"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:29 ["u4qmface3qqmd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:29 ["u4qmface3qqmd"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:29 ["u4qmface3qqmd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:29 ["u4qmface3qqmd"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:11:29 ["u4qmface3qqmd"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:11:29 ["u4qmface3qqmd"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:11:29 ["u4qmface3qqmd"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet, limit,
+)
+but read: array (
+)
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:11:30 ["rbgf1ibrl4mb2"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:37 ["85n9v3aohee5v"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:37 ["85n9v3aohee5v"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:37 ["85n9v3aohee5v"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:37 ["85n9v3aohee5v"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:11:37 ["85n9v3aohee5v"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:11:37 ["85n9v3aohee5v"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:11:37 ["85n9v3aohee5v"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet, limit,
+)
+but read: array (
+)
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:11:37 ["qlfe9cps3o5l5"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:41 ["cg9ceohd4d4sa"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:41 ["cg9ceohd4d4sa"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:41 ["cg9ceohd4d4sa"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:41 ["cg9ceohd4d4sa"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:11:41 ["cg9ceohd4d4sa"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:11:41 ["cg9ceohd4d4sa"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:11:41 ["cg9ceohd4d4sa"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:41 ["rupgir34b94js"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:41 ["rupgir34b94js"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:41 ["rupgir34b94js"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:41 ["rupgir34b94js"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:11:41 ["rupgir34b94js"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:11:42 ["rupgir34b94js"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:11:42 ["rupgir34b94js"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet, limit,
+)
+but read: array (
+)
+2024-01-20 04:11:42 ["rupgir34b94js"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:11:42 ["rupgir34b94js"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:11:42 ["rupgir34b94js"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:50 ["u9304vabnpg0i"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:50 ["u9304vabnpg0i"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:50 ["u9304vabnpg0i"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:50 ["u9304vabnpg0i"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:11:50 ["u9304vabnpg0i"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:11:50 ["u9304vabnpg0i"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:11:50 ["u9304vabnpg0i"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377?limit={limit}
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:11:50 ["jm1hbh89vs8hr"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:55 ["uu0phc9mr1gi4"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:55 ["uu0phc9mr1gi4"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:55 ["uu0phc9mr1gi4"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:55 ["uu0phc9mr1gi4"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:11:55 ["uu0phc9mr1gi4"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:11:55 ["uu0phc9mr1gi4"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:11:55 ["uu0phc9mr1gi4"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:11:55 ["8060s4bmo258s"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:11:55 ["8060s4bmo258s"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:11:55 ["8060s4bmo258s"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377?limit={limit}
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:11:55 ["8060s4bmo258s"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:03 ["rg8hkaofsbcm7"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:03 ["rg8hkaofsbcm7"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:03 ["rg8hkaofsbcm7"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:03 ["rg8hkaofsbcm7"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:12:03 ["rg8hkaofsbcm7"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:12:03 ["rg8hkaofsbcm7"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:12:03 ["rg8hkaofsbcm7"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377?limit={limit}
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:12:03 ["n9ftpqabc0n79"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:04 ["vff5v0js58jki"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:04 ["vff5v0js58jki"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:04 ["vff5v0js58jki"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:04 ["vff5v0js58jki"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:12:04 ["vff5v0js58jki"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:12:04 ["vff5v0js58jki"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:12:04 ["vff5v0js58jki"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:04 ["ipafho4t29kaq"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:04 ["ipafho4t29kaq"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:04 ["ipafho4t29kaq"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:04 ["ipafho4t29kaq"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:12:04 ["ipafho4t29kaq"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:12:04 ["ipafho4t29kaq"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:12:04 ["ipafho4t29kaq"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:12:04 ["ipafho4t29kaq"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377?limit={limit}
+2024-01-20 04:12:05 ["ipafho4t29kaq"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:12:05 ["ipafho4t29kaq"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:12:05 ["ipafho4t29kaq"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:12:05 ["ipafho4t29kaq"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:06 ["mg10g1an4hct4"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:06 ["mg10g1an4hct4"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:06 ["mg10g1an4hct4"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:06 ["mg10g1an4hct4"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:12:06 ["mg10g1an4hct4"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:12:06 ["mg10g1an4hct4"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:12:06 ["mg10g1an4hct4"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377?limit={limit}
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:12:06 ["lb01ibeat4s0g"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:36 ["n7gais7816mhg"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:36 ["n7gais7816mhg"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:36 ["n7gais7816mhg"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:36 ["n7gais7816mhg"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:12:36 ["n7gais7816mhg"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:12:36 ["n7gais7816mhg"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:12:36 ["n7gais7816mhg"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:12:36 ["olp4i5dnj5sgh"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&limit=10&lat=43.7101728&lon=7.261953200000001&categorySet=9377
+2024-01-20 04:12:37 ["olp4i5dnj5sgh"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:12:37 ["olp4i5dnj5sgh"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:12:37 ["olp4i5dnj5sgh"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:12:37 ["olp4i5dnj5sgh"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:59 ["135ecpg891v1h"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:59 ["135ecpg891v1h"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:12:59 ["135ecpg891v1h"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:12:59 ["135ecpg891v1h"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:12:59 ["135ecpg891v1h"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:12:59 ["135ecpg891v1h"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:12:59 ["135ecpg891v1h"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:12:59 ["mjvulmagnchfd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:12:59 ["mjvulmagnchfd"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:13:00 ["mjvulmagnchfd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:13:00 ["mjvulmagnchfd"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:13:00 ["mjvulmagnchfd"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:13:00 ["mjvulmagnchfd"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:13:00 ["mjvulmagnchfd"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet, limit,
+)
+but read: array (
+)
+2024-01-20 04:13:00 ["mjvulmagnchfd"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:13:00 ["mjvulmagnchfd"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:13:00 ["mjvulmagnchfd"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:13:00 ["l1hie9nku2p19"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:13:01 ["l1hie9nku2p19"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:13:01 ["l1hie9nku2p19"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:13:01 ["l1hie9nku2p19"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:13:01 ["l1hie9nku2p19"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:13:01 ["l1hie9nku2p19"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:13:01 ["l1hie9nku2p19"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:13:01 ["68f3u4vph7den"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:13:01 ["68f3u4vph7den"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:13:01 ["68f3u4vph7den"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:13:01 ["68f3u4vph7den"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:13:01 ["68f3u4vph7den"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:13:01 ["68f3u4vph7den"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:13:01 ["68f3u4vph7den"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet, limit,
+)
+but read: array (
+)
+2024-01-20 04:13:01 ["68f3u4vph7den"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:13:01 ["68f3u4vph7den"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:13:01 ["68f3u4vph7den"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:13:07 ["bdl7mklgh9s23"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:13:07 ["bdl7mklgh9s23"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:13:07 ["bdl7mklgh9s23"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:13:07 ["bdl7mklgh9s23"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:13:07 ["bdl7mklgh9s23"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:13:07 ["bdl7mklgh9s23"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:13:07 ["bdl7mklgh9s23"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  categorySet => 
+  array (
+    0 => 9377?limit=15,
+  ),
+)
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:13:07 ["l1c9r2ftvsfvd"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:13:08 ["45hed5429j692"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:13:08 ["45hed5429j692"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:13:08 ["45hed5429j692"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:13:08 ["45hed5429j692"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:13:08 ["45hed5429j692"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:13:08 ["45hed5429j692"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:13:08 ["45hed5429j692"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  categorySet => 
+  array (
+    0 => 9377?limit=15,
+  ),
+)
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:13:08 ["vbgv2hi6l7ndt"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:14 ["jn5fpi7brf98o"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:14 ["jn5fpi7brf98o"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:14 ["jn5fpi7brf98o"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:14 ["jn5fpi7brf98o"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:15:14 ["jn5fpi7brf98o"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:15:14 ["jn5fpi7brf98o"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:15:14 ["jn5fpi7brf98o"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:14 ["l35sc7s6v457k"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:14 ["l35sc7s6v457k"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:14 ["l35sc7s6v457k"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:14 ["l35sc7s6v457k"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:15:14 ["l35sc7s6v457k"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:15:14 ["l35sc7s6v457k"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:15:14 ["l35sc7s6v457k"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  limit => 
+  array (
+    0 => 15?categorySet=9377,
+  ),
+)
+2024-01-20 04:15:14 ["l35sc7s6v457k"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:15:14 ["l35sc7s6v457k"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:15:14 ["l35sc7s6v457k"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:15 ["4jdvdnt7ct989"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:15 ["4jdvdnt7ct989"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:15 ["4jdvdnt7ct989"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:15 ["4jdvdnt7ct989"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:15:15 ["4jdvdnt7ct989"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:15:15 ["4jdvdnt7ct989"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:15:15 ["4jdvdnt7ct989"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:15 ["dd89jukn2dveo"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:15 ["dd89jukn2dveo"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:15 ["dd89jukn2dveo"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:15 ["dd89jukn2dveo"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:15:15 ["dd89jukn2dveo"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:15:15 ["dd89jukn2dveo"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:15:15 ["dd89jukn2dveo"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  limit => 
+  array (
+    0 => 15?categorySet=9377,
+  ),
+)
+2024-01-20 04:15:15 ["dd89jukn2dveo"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:15:15 ["dd89jukn2dveo"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:15:15 ["dd89jukn2dveo"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:16 ["096uf8js7r77m"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:16 ["096uf8js7r77m"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:16 ["096uf8js7r77m"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:16 ["096uf8js7r77m"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:15:16 ["096uf8js7r77m"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:15:16 ["096uf8js7r77m"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:15:16 ["096uf8js7r77m"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  limit => 
+  array (
+    0 => 15?categorySet=9377,
+  ),
+)
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:15:16 ["t0gb3mor3e8u6"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:33 ["nqoj9t7os4cdu"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:33 ["nqoj9t7os4cdu"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:33 ["nqoj9t7os4cdu"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:33 ["nqoj9t7os4cdu"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:15:33 ["nqoj9t7os4cdu"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:15:33 ["nqoj9t7os4cdu"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:15:33 ["nqoj9t7os4cdu"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:33 ["t3kunof02han4"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:33 ["t3kunof02han4"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:33 ["t3kunof02han4"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:33 ["t3kunof02han4"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:15:33 ["t3kunof02han4"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:15:33 ["t3kunof02han4"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:15:33 ["t3kunof02han4"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  limit => 
+  array (
+    0 => 15?categorySet=9377,
+  ),
+)
+2024-01-20 04:15:33 ["t3kunof02han4"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:15:33 ["t3kunof02han4"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:15:33 ["t3kunof02han4"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:45 ["l9co6l9u3b5bd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:45 ["l9co6l9u3b5bd"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:45 ["l9co6l9u3b5bd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:45 ["l9co6l9u3b5bd"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:15:45 ["l9co6l9u3b5bd"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:15:45 ["l9co6l9u3b5bd"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:15:45 ["l9co6l9u3b5bd"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:15:45 ["ibk4usard0dkh"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:15:45 ["ibk4usard0dkh"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:15:45 ["ibk4usard0dkh"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:15:45 ["ibk4usard0dkh"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:15:45 ["ibk4usard0dkh"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:15:45 ["ibk4usard0dkh"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:15:45 ["ibk4usard0dkh"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  categorySet => 
+  array (
+    0 => 9377,
+  ),
+)
+2024-01-20 04:15:45 ["ibk4usard0dkh"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:15:45 ["ibk4usard0dkh"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:15:45 ["ibk4usard0dkh"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:17:53 ["v4e65j0hf2lfm"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:17:53 ["v4e65j0hf2lfm"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:17:53 ["v4e65j0hf2lfm"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:17:53 ["v4e65j0hf2lfm"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:17:53 ["v4e65j0hf2lfm"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:17:53 ["v4e65j0hf2lfm"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:17:53 ["v4e65j0hf2lfm"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:17:53 ["ltrs75po4rml2"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:17:53 ["ltrs75po4rml2"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:17:53 ["ltrs75po4rml2"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:17:53 ["ltrs75po4rml2"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:17:53 ["ltrs75po4rml2"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:17:53 ["ltrs75po4rml2"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:17:53 ["ltrs75po4rml2"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => [categorySet],
+)
+but read: array (
+)
+2024-01-20 04:17:53 ["ltrs75po4rml2"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:17:53 ["ltrs75po4rml2"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:17:53 ["ltrs75po4rml2"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:17:54 ["7a66r4qjq2ekc"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:17:54 ["7a66r4qjq2ekc"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:17:54 ["7a66r4qjq2ekc"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:17:54 ["7a66r4qjq2ekc"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:17:54 ["7a66r4qjq2ekc"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:17:54 ["7a66r4qjq2ekc"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:17:54 ["7a66r4qjq2ekc"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => [categorySet],
+)
+but read: array (
+)
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:17:54 ["0u2lqveqcj0ji"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:18:01 ["htca2vk9hgem7"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:18:01 ["htca2vk9hgem7"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:18:01 ["htca2vk9hgem7"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:18:01 ["htca2vk9hgem7"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:18:01 ["htca2vk9hgem7"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:18:01 ["htca2vk9hgem7"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:18:01 ["htca2vk9hgem7"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+)
+
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&categorySet=9377
+2024-01-20 04:18:01 ["jikhfgd5p9s22"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:18:02 ["jikhfgd5p9s22"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:18:02 ["jikhfgd5p9s22"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:18:02 ["jikhfgd5p9s22"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:20:45 ["uqukv2mfb0k8q"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:20:45 ["uqukv2mfb0k8q"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:20:45 ["uqukv2mfb0k8q"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:20:45 ["uqukv2mfb0k8q"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:20:45 ["uqukv2mfb0k8q"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:20:45 ["uqukv2mfb0k8q"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:20:45 ["uqukv2mfb0k8q"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:20:45 ["vof25tcgt1adh"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:20:45 ["vof25tcgt1adh"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:20:45 ["vof25tcgt1adh"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:20:45 ["vof25tcgt1adh"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:20:45 ["vof25tcgt1adh"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:20:45 ["vof25tcgt1adh"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:20:45 ["vof25tcgt1adh"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  limit => 
+  array (
+    0 => 15?categorySet=9377,
+  ),
+)
+2024-01-20 04:20:45 ["vof25tcgt1adh"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:20:45 ["vof25tcgt1adh"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:20:45 ["vof25tcgt1adh"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:20:55 ["fpl5nnj86pkpm"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:20:55 ["fpl5nnj86pkpm"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:20:55 ["fpl5nnj86pkpm"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:20:55 ["fpl5nnj86pkpm"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:20:55 ["fpl5nnj86pkpm"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:20:55 ["fpl5nnj86pkpm"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:20:55 ["fpl5nnj86pkpm"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:20:55 ["cb04tlb4bvv9h"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:20:55 ["cb04tlb4bvv9h"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:20:55 ["cb04tlb4bvv9h"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:20:55 ["cb04tlb4bvv9h"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:20:55 ["cb04tlb4bvv9h"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:20:55 ["cb04tlb4bvv9h"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:20:56 ["cb04tlb4bvv9h"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  limit => 
+  array (
+    0 => 15?categorySet=9377,
+  ),
+)
+2024-01-20 04:20:56 ["cb04tlb4bvv9h"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:20:56 ["cb04tlb4bvv9h"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:20:56 ["cb04tlb4bvv9h"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:21:52 ["o5vig56tv812k"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:21:52 ["o5vig56tv812k"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:21:52 ["o5vig56tv812k"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:21:52 ["o5vig56tv812k"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:21:52 ["o5vig56tv812k"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:21:52 ["o5vig56tv812k"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:21:52 ["o5vig56tv812k"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] service WARNING: Not all service arguments were found. Expected: array (
+  0 => categorySet,
+  1 => limit,
+)
+but read: array (
+  limit => 
+  array (
+    0 => 15?categorySet=9377,
+  ),
+)
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:21:52 ["q34rqbt2hkr5e"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:21:59 ["c923dehuk5976"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:21:59 ["c923dehuk5976"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:21:59 ["c923dehuk5976"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:21:59 ["c923dehuk5976"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:21:59 ["c923dehuk5976"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:21:59 ["c923dehuk5976"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:21:59 ["c923dehuk5976"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 15
+)
+
+2024-01-20 04:21:59 ["5gfql2krvlmcq"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=15&categorySet=9377
+2024-01-20 04:22:00 ["5gfql2krvlmcq"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:22:00 ["5gfql2krvlmcq"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:22:00 ["5gfql2krvlmcq"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:22:00 ["5gfql2krvlmcq"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:00 ["tasgeueo5gsr4"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:00 ["tasgeueo5gsr4"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:00 ["tasgeueo5gsr4"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:00 ["tasgeueo5gsr4"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:22:00 ["tasgeueo5gsr4"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:22:00 ["tasgeueo5gsr4"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:22:00 ["tasgeueo5gsr4"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:00 ["t00drtoq0irdb"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:00 ["t00drtoq0irdb"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:22:00 ["t00drtoq0irdb"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 15
+)
+
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=15&categorySet=9377
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:22:00 ["t00drtoq0irdb"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:14 ["mkv11m0gankq3"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:14 ["mkv11m0gankq3"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:14 ["mkv11m0gankq3"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:14 ["mkv11m0gankq3"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:22:14 ["mkv11m0gankq3"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:22:14 ["mkv11m0gankq3"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:22:14 ["mkv11m0gankq3"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:14 ["8beja8lun67kq"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:14 ["8beja8lun67kq"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:14 ["8beja8lun67kq"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:14 ["8beja8lun67kq"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:22:14 ["8beja8lun67kq"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:22:14 ["8beja8lun67kq"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:22:14 ["8beja8lun67kq"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 100
+)
+
+2024-01-20 04:22:14 ["8beja8lun67kq"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=100&categorySet=9377
+2024-01-20 04:22:15 ["8beja8lun67kq"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:22:15 ["8beja8lun67kq"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:22:15 ["8beja8lun67kq"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:22:15 ["8beja8lun67kq"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:15 ["fmmqi0se5c6it"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:15 ["fmmqi0se5c6it"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:15 ["fmmqi0se5c6it"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:15 ["fmmqi0se5c6it"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:22:15 ["fmmqi0se5c6it"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:22:15 ["fmmqi0se5c6it"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:22:15 ["fmmqi0se5c6it"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 100
+)
+
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=100&categorySet=9377
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:22:15 ["drujtpgr7r3j1"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:28 ["0hsmp2jj8es4e"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:28 ["0hsmp2jj8es4e"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:28 ["0hsmp2jj8es4e"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:28 ["0hsmp2jj8es4e"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:22:28 ["0hsmp2jj8es4e"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:22:28 ["0hsmp2jj8es4e"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:22:28 ["0hsmp2jj8es4e"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:28 ["jv6n215b5bcng"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:28 ["jv6n215b5bcng"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:22:28 ["jv6n215b5bcng"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-20 04:22:28 ["jv6n215b5bcng"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:28 ["uc53k5i65cjut"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:28 ["uc53k5i65cjut"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:28 ["uc53k5i65cjut"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:28 ["uc53k5i65cjut"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:22:28 ["uc53k5i65cjut"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:22:28 ["uc53k5i65cjut"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:22:28 ["uc53k5i65cjut"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:22:28 ["qrj7hc5l2l533"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:22:28 ["qrj7hc5l2l533"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:22:28 ["qrj7hc5l2l533"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:22:28 ["qrj7hc5l2l533"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:22:28 ["qrj7hc5l2l533"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:22:28 ["qrj7hc5l2l533"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:22:29 ["qrj7hc5l2l533"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:22:29 ["qrj7hc5l2l533"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:22:29 ["qrj7hc5l2l533"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:22:29 ["qrj7hc5l2l533"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:22:29 ["qrj7hc5l2l533"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:22:29 ["qrj7hc5l2l533"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:28:11 ["cnce5o35oa4jt"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:28:11 ["cnce5o35oa4jt"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:28:11 ["cnce5o35oa4jt"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:28:11 ["cnce5o35oa4jt"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:28:11 ["cnce5o35oa4jt"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:28:11 ["cnce5o35oa4jt"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:28:11 ["cnce5o35oa4jt"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/src/common/SparqlClient.php:95
+Stack trace:
+#0 /var/www/html/sparql-ms/src/sparqlms/service.php(280): frmichel\sparqlms\common\SparqlClient->queryRaw()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#2 {main}
+
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 04:28:11 ["rj9ak7hb7pie9"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:00 ["t0iguk97bkdbp"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:00 ["t0iguk97bkdbp"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:00 ["t0iguk97bkdbp"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:00 ["t0iguk97bkdbp"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:29:00 ["t0iguk97bkdbp"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:29:00 ["t0iguk97bkdbp"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:29:00 ["t0iguk97bkdbp"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:00 ["epsfugln3kjsq"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:00 ["epsfugln3kjsq"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:29:00 ["epsfugln3kjsq"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/src/common/SparqlClient.php:95
+Stack trace:
+#0 /var/www/html/sparql-ms/src/sparqlms/service.php(280): frmichel\sparqlms\common\SparqlClient->queryRaw()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#2 {main}
+
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 04:29:00 ["epsfugln3kjsq"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:01 ["3nf0a9p26v8kb"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:01 ["3nf0a9p26v8kb"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:01 ["3nf0a9p26v8kb"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:01 ["3nf0a9p26v8kb"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:29:01 ["3nf0a9p26v8kb"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:29:01 ["3nf0a9p26v8kb"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:29:01 ["3nf0a9p26v8kb"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/src/common/SparqlClient.php:95
+Stack trace:
+#0 /var/www/html/sparql-ms/src/sparqlms/service.php(280): frmichel\sparqlms\common\SparqlClient->queryRaw()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#2 {main}
+
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 04:29:01 ["3l7cga3jpsonj"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:42 ["l1khvr5u3t90n"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:42 ["l1khvr5u3t90n"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:42 ["l1khvr5u3t90n"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:42 ["l1khvr5u3t90n"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:29:42 ["l1khvr5u3t90n"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:29:42 ["l1khvr5u3t90n"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:29:42 ["l1khvr5u3t90n"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:42 ["div5a1s88ngn3"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:42 ["div5a1s88ngn3"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:42 ["div5a1s88ngn3"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:42 ["div5a1s88ngn3"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:29:42 ["div5a1s88ngn3"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:29:42 ["div5a1s88ngn3"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:29:42 ["div5a1s88ngn3"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:29:42 ["div5a1s88ngn3"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:29:43 ["div5a1s88ngn3"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:29:43 ["div5a1s88ngn3"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:29:43 ["div5a1s88ngn3"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:29:43 ["div5a1s88ngn3"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:44 ["oc46tsuai2vri"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:44 ["oc46tsuai2vri"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:44 ["oc46tsuai2vri"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:44 ["oc46tsuai2vri"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:29:44 ["oc46tsuai2vri"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:29:44 ["oc46tsuai2vri"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:29:44 ["oc46tsuai2vri"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:29:44 ["5131m6fh8ekq6"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:55 ["co0i7ioelrp6b"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:55 ["co0i7ioelrp6b"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:55 ["co0i7ioelrp6b"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:55 ["co0i7ioelrp6b"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:29:55 ["co0i7ioelrp6b"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:29:55 ["co0i7ioelrp6b"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:29:55 ["co0i7ioelrp6b"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:29:55 ["48qiaq549ai6a"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:29:55 ["48qiaq549ai6a"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:29:55 ["48qiaq549ai6a"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:29:55 ["48qiaq549ai6a"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:09 ["542eo913qhlse"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:09 ["542eo913qhlse"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:09 ["542eo913qhlse"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:09 ["542eo913qhlse"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:30:09 ["542eo913qhlse"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:30:09 ["542eo913qhlse"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:30:09 ["542eo913qhlse"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:09 ["39c93ce44njgs"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:09 ["39c93ce44njgs"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:30:09 ["39c93ce44njgs"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:30:09 ["39c93ce44njgs"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:15 ["tiov0q360sp18"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:15 ["tiov0q360sp18"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:15 ["tiov0q360sp18"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:15 ["tiov0q360sp18"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:30:15 ["tiov0q360sp18"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:30:15 ["tiov0q360sp18"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:30:15 ["tiov0q360sp18"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:15 ["0omoi69diahth"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:15 ["0omoi69diahth"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:30:15 ["0omoi69diahth"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:30:15 ["0omoi69diahth"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/src/common/SparqlClient.php:95
+Stack trace:
+#0 /var/www/html/sparql-ms/src/sparqlms/service.php(280): frmichel\sparqlms\common\SparqlClient->queryRaw()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#2 {main}
+
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 04:30:15 ["0omoi69diahth"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:37 ["g9jgo6q84ia0f"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:37 ["g9jgo6q84ia0f"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:37 ["g9jgo6q84ia0f"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:37 ["g9jgo6q84ia0f"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:30:37 ["g9jgo6q84ia0f"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:30:37 ["g9jgo6q84ia0f"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:30:37 ["g9jgo6q84ia0f"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:30:37 ["udu0tst2tqtf5"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:38 ["5kjmmi39as210"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:38 ["5kjmmi39as210"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:38 ["5kjmmi39as210"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:38 ["5kjmmi39as210"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:30:38 ["5kjmmi39as210"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:30:38 ["5kjmmi39as210"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:30:38 ["5kjmmi39as210"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:38 ["0vvvht9o05390"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:38 ["0vvvht9o05390"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:30:38 ["0vvvht9o05390"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:30:38 ["0vvvht9o05390"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:58 ["vmd6nv3c4m8v6"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:58 ["vmd6nv3c4m8v6"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:58 ["vmd6nv3c4m8v6"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:58 ["vmd6nv3c4m8v6"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:30:58 ["vmd6nv3c4m8v6"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:30:58 ["vmd6nv3c4m8v6"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:30:58 ["vmd6nv3c4m8v6"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:30:58 ["rmk3j1vcdvdje"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:31:06 ["u9iu084asfp1l"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:31:06 ["u9iu084asfp1l"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:31:06 ["u9iu084asfp1l"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:31:06 ["u9iu084asfp1l"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:31:06 ["u9iu084asfp1l"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:31:06 ["u9iu084asfp1l"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:31:06 ["u9iu084asfp1l"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:31:06 ["s1ivq7qopqueq"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:31:25 ["8br2kamsk4kki"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:31:25 ["8br2kamsk4kki"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:31:25 ["8br2kamsk4kki"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:31:25 ["8br2kamsk4kki"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:31:25 ["8br2kamsk4kki"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:31:25 ["8br2kamsk4kki"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:31:25 ["8br2kamsk4kki"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:31:25 ["vif07e8nvfqtk"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:32:19 ["i7e2k6pipjttp"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:32:19 ["i7e2k6pipjttp"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:32:19 ["i7e2k6pipjttp"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:32:19 ["i7e2k6pipjttp"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 04:32:19 ["i7e2k6pipjttp"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 04:32:19 ["i7e2k6pipjttp"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 04:32:19 ["i7e2k6pipjttp"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 04:32:19 ["2necvtagoap7o"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 04:32:19 ["2necvtagoap7o"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 04:32:19 ["2necvtagoap7o"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 04:32:19 ["2necvtagoap7o"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 04:32:19 ["2necvtagoap7o"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 04:32:19 ["2necvtagoap7o"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 04:32:19 ["2necvtagoap7o"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 04:32:19 ["2necvtagoap7o"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 04:32:19 ["2necvtagoap7o"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 04:32:20 ["2necvtagoap7o"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 04:32:20 ["2necvtagoap7o"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 04:32:20 ["2necvtagoap7o"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 05:02:07 ["osfk5o7cp10hj"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 05:02:07 ["osfk5o7cp10hj"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 05:02:07 ["osfk5o7cp10hj"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 05:02:07 ["osfk5o7cp10hj"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 05:02:07 ["osfk5o7cp10hj"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 05:02:07 ["osfk5o7cp10hj"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 05:02:07 ["osfk5o7cp10hj"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 05:02:07 ["f02krai2hs1co"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 05:02:07 ["f02krai2hs1co"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 05:02:07 ["f02krai2hs1co"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 05:02:07 ["f02krai2hs1co"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 05:02:07 ["f02krai2hs1co"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 05:02:07 ["f02krai2hs1co"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 05:02:07 ["f02krai2hs1co"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 05:02:07 ["f02krai2hs1co"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 05:02:08 ["f02krai2hs1co"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 05:02:08 ["f02krai2hs1co"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 05:02:08 ["f02krai2hs1co"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 05:02:08 ["f02krai2hs1co"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 05:02:50 ["e6c184n9ogt3n"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 05:02:50 ["e6c184n9ogt3n"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 05:02:50 ["e6c184n9ogt3n"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 05:02:50 ["e6c184n9ogt3n"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 05:02:50 ["e6c184n9ogt3n"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 05:02:50 ["e6c184n9ogt3n"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 05:02:50 ["e6c184n9ogt3n"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [categorySet] => 9377
+    [limit] => 3
+)
+
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43.7101728&lon=7.261953200000001&limit=3&categorySet=9377
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 05:02:50 ["2lato5rm7qq1k"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 05:02:51 ["2lato5rm7qq1k"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:08:09 ["vcetie8nu2r28"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:08:09 ["vcetie8nu2r28"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:08:09 ["vcetie8nu2r28"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:08:09 ["vcetie8nu2r28"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:08:09 ["vcetie8nu2r28"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:08:09 ["vcetie8nu2r28"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:08:09 ["vcetie8nu2r28"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:08:09 ["qpu3e3luteooe"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:08:09 ["qpu3e3luteooe"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:08:09 ["qpu3e3luteooe"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:08:09 ["qpu3e3luteooe"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:08:09 ["qpu3e3luteooe"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:08:09 ["qpu3e3luteooe"] service NOTICE: Client SPARQL query (html special chars encoded):
+ASK {?x ?y ?z}
+2024-01-20 06:08:09 ["qpu3e3luteooe"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:08:09 ["qpu3e3luteooe"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:08:10 ["qpu3e3luteooe"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:08:10 ["qpu3e3luteooe"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php:247
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(296): EasyRdf\Sparql\Client->update()
+#2 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#3 {main}
+
+2024-01-20 06:08:10 ["qpu3e3luteooe"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 06:08:10 ["qpu3e3luteooe"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:08:11 ["96vd62vt6pmgg"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:08:11 ["96vd62vt6pmgg"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:08:11 ["96vd62vt6pmgg"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:08:11 ["96vd62vt6pmgg"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:08:11 ["96vd62vt6pmgg"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:08:11 ["96vd62vt6pmgg"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:08:11 ["96vd62vt6pmgg"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:08:11 ["2okubd08dmf8i"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:08:11 ["2okubd08dmf8i"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:08:11 ["2okubd08dmf8i"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php:247
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(296): EasyRdf\Sparql\Client->update()
+#2 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#3 {main}
+
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 06:08:11 ["2okubd08dmf8i"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:08:32 ["a6komsmi0kltf"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:08:32 ["a6komsmi0kltf"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:08:32 ["a6komsmi0kltf"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:08:32 ["a6komsmi0kltf"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:08:32 ["a6komsmi0kltf"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:08:32 ["a6komsmi0kltf"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:08:32 ["a6komsmi0kltf"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:08:32 ["5hs457thi6kkh"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:08:32 ["5hs457thi6kkh"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:08:32 ["5hs457thi6kkh"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php:247
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(296): EasyRdf\Sparql\Client->update()
+#2 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#3 {main}
+
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 06:08:32 ["5hs457thi6kkh"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:21 ["73ffen80ks8n8"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:21 ["73ffen80ks8n8"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:21 ["73ffen80ks8n8"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:21 ["73ffen80ks8n8"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:09:21 ["73ffen80ks8n8"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:09:21 ["73ffen80ks8n8"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:09:21 ["73ffen80ks8n8"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php:247
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(296): EasyRdf\Sparql\Client->update()
+#2 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#3 {main}
+
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 06:09:21 ["ukevbmqiqpdsi"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:22 ["058vuhbfj314i"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:22 ["058vuhbfj314i"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:22 ["058vuhbfj314i"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:22 ["058vuhbfj314i"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:09:22 ["058vuhbfj314i"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:09:22 ["058vuhbfj314i"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:09:22 ["058vuhbfj314i"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:22 ["esi0bb04annlj"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:22 ["esi0bb04annlj"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:09:22 ["esi0bb04annlj"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:09:22 ["esi0bb04annlj"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php:247
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(296): EasyRdf\Sparql\Client->update()
+#2 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#3 {main}
+
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 06:09:22 ["esi0bb04annlj"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:57 ["2tuju4kju4ikt"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:57 ["2tuju4kju4ikt"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:57 ["2tuju4kju4ikt"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:57 ["2tuju4kju4ikt"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:09:57 ["2tuju4kju4ikt"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:09:57 ["2tuju4kju4ikt"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:09:57 ["2tuju4kju4ikt"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php:247
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(296): EasyRdf\Sparql\Client->update()
+#2 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#3 {main}
+
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 06:09:57 ["j2gnglrfrg5cd"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:58 ["e92p71iiek4tr"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:58 ["e92p71iiek4tr"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:58 ["e92p71iiek4tr"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:58 ["e92p71iiek4tr"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:09:58 ["e92p71iiek4tr"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:09:58 ["e92p71iiek4tr"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:09:58 ["e92p71iiek4tr"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service ERROR: EasyRdf\Http\Exception: HTTP request for SPARQL query failed in /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php:247
+Stack trace:
+#0 /var/www/html/sparql-ms/vendor/easyrdf/easyrdf/lib/Sparql/Client.php(190): EasyRdf\Sparql\Client->request()
+#1 /var/www/html/sparql-ms/src/sparqlms/service.php(296): EasyRdf\Sparql\Client->update()
+#2 /var/www/html/sparql-ms/src/sparqlms/service.php(167): frmichel\sparqlms\queryWebAPIAndGenerateTriples()
+#3 {main}
+
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: Returning HTTP status 500.
+
+2024-01-20 06:09:58 ["2siuv6r92f3jt"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:11:55 ["nt61qu0jrg5eq"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:11:55 ["nt61qu0jrg5eq"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:11:55 ["nt61qu0jrg5eq"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:11:55 ["nt61qu0jrg5eq"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:11:55 ["nt61qu0jrg5eq"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:11:55 ["nt61qu0jrg5eq"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:11:55 ["nt61qu0jrg5eq"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 06:11:55 ["gnhv2hmeocomm"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:15 ["s6tvm1hhleglo"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:15 ["s6tvm1hhleglo"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:15 ["s6tvm1hhleglo"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:15 ["s6tvm1hhleglo"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:12:15 ["s6tvm1hhleglo"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:12:15 ["s6tvm1hhleglo"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:12:15 ["s6tvm1hhleglo"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 06:12:15 ["fsdb8462iqq5c"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:36 ["6gmdmu12h6uud"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:36 ["6gmdmu12h6uud"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:36 ["6gmdmu12h6uud"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:36 ["6gmdmu12h6uud"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:12:36 ["6gmdmu12h6uud"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:12:36 ["6gmdmu12h6uud"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:12:36 ["6gmdmu12h6uud"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 06:12:36 ["22tjoe7a56d3e"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:43 ["regepvmvudvvp"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:43 ["regepvmvudvvp"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:43 ["regepvmvudvvp"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:43 ["regepvmvudvvp"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:12:43 ["regepvmvudvvp"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:12:43 ["regepvmvudvvp"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:12:43 ["regepvmvudvvp"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 06:12:43 ["r9uhkgce4e7oo"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:58 ["u6i6uqfptp9h8"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:58 ["u6i6uqfptp9h8"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:58 ["u6i6uqfptp9h8"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:58 ["u6i6uqfptp9h8"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:12:58 ["u6i6uqfptp9h8"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:12:58 ["u6i6uqfptp9h8"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:12:58 ["u6i6uqfptp9h8"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:12:58 ["plti1i1874d76"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:12:58 ["plti1i1874d76"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:12:58 ["plti1i1874d76"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 06:12:58 ["plti1i1874d76"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:13:48 ["cldcoo555rsf3"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:13:48 ["cldcoo555rsf3"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:13:48 ["cldcoo555rsf3"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:13:48 ["cldcoo555rsf3"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:13:48 ["cldcoo555rsf3"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:13:48 ["cldcoo555rsf3"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:13:48 ["cldcoo555rsf3"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:13:48 ["3evgsn4203vpg"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:13:49 ["3evgsn4203vpg"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:13:49 ["3evgsn4203vpg"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 06:13:49 ["3evgsn4203vpg"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:18:11 ["qpg62ntqoern8"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:18:11 ["qpg62ntqoern8"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:18:11 ["qpg62ntqoern8"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:18:11 ["qpg62ntqoern8"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-20 06:18:11 ["qpg62ntqoern8"] Utils NOTICE: Query HTTP header "Accept": */*
+2024-01-20 06:18:11 ["qpg62ntqoern8"] Utils WARNING: Unsupported HTTP method OPTIONS
+2024-01-20 06:18:11 ["qpg62ntqoern8"] Utils NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-20 06:18:11 ["jljqarekaior3"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-20 06:18:11 ["jljqarekaior3"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-20 06:18:11 ["jljqarekaior3"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-20 06:18:11 ["jljqarekaior3"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-20 06:18:11 ["jljqarekaior3"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json,*/*;q=0.9
+2024-01-20 06:18:11 ["jljqarekaior3"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; 
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; 
+PREFIX schema: &lt;http://schema.org/#&gt;
+prefix geo: &lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt;
+SELECT * WHERE {
+  ?sub ?pred ?obj .
+}
+2024-01-20 06:18:11 ["jljqarekaior3"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [location] => nice
+)
+
+2024-01-20 06:18:11 ["jljqarekaior3"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-20 06:18:12 ["jljqarekaior3"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-20 06:18:12 ["jljqarekaior3"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-20 06:18:12 ["jljqarekaior3"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-20 06:18:12 ["jljqarekaior3"] service NOTICE: --------- Done - SPARQL µS execution --------

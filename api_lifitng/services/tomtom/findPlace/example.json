@@ -1,0 +1,1027 @@
+{
+    "summary": {
+        "query": "",
+        "queryType": "NON_NEAR",
+        "queryTime": 9,
+        "numResults": 15,
+        "offset": 0,
+        "totalResults": 18,
+        "fuzzyLevel": 1,
+        "geoBias": {
+            "lat": 43.7101728,
+            "lon": 7.261953200000001
+        }
+    },
+    "results": [
+        {
+            "type": "POI",
+            "id": "GD2GuSVpuglNUu8-geTl3g",
+            "score": 1.2139700651,
+            "dist": 1680.862991,
+            "info": "search:ta:250009008119647-FR",
+            "poi": {
+                "name": "Acropolis Palais des Expositions",
+                "phone": "+33 4 93 92 83 00",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.nice-acropolis.com",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetName": "Boulevard Jean-Baptiste Verany",
+                "municipality": "Nice",
+                "neighbourhood": "Cimiez",
+                "countrySecondarySubdivision": "Alpes-Maritimes",
+                "countrySubdivision": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionName": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionCode": "PAC",
+                "postalCode": "06300",
+                "countryCode": "FR",
+                "country": "France",
+                "countryCodeISO3": "FRA",
+                "freeformAddress": "Boulevard Jean-Baptiste Verany, 06300 Nice",
+                "localName": "Nice"
+            },
+            "position": {
+                "lat": 43.708518,
+                "lon": 7.28274
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.70973,
+                    "lon": 7.28107
+                },
+                "btmRightPoint": {
+                    "lat": 43.70731,
+                    "lon": 7.28441
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.70733,
+                        "lon": 7.28242
+                    }
+                },
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.70837,
+                        "lon": 7.28356
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "CZTSk5ehOlr3jdHea2hBXQ",
+            "score": 1.2095221281,
+            "dist": 5693.4995,
+            "info": "search:ta:250009003947158-FR",
+            "poi": {
+                "name": "Les Salons de la Rotonde Lenôtre",
+                "phone": "+33 4 92 00 82 60",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.lenotre.com/fr/Receptions/Lieux/la-rotonde-beaulieu",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetName": "Avenue Fernand Dunan",
+                "municipality": "Beaulieu-sur-Mer",
+                "countrySecondarySubdivision": "Alpes-Maritimes",
+                "countrySubdivision": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionName": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionCode": "PAC",
+                "postalCode": "06310",
+                "countryCode": "FR",
+                "country": "France",
+                "countryCodeISO3": "FRA",
+                "freeformAddress": "Avenue Fernand Dunan, 06310 Beaulieu-sur-Mer",
+                "localName": "Beaulieu-sur-Mer"
+            },
+            "position": {
+                "lat": 43.704413,
+                "lon": 7.332335
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.70531,
+                    "lon": 7.33109
+                },
+                "btmRightPoint": {
+                    "lat": 43.70351,
+                    "lon": 7.33358
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.70422,
+                        "lon": 7.33208
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "164ZIh3x_srvzP3fGzaX9w",
+            "score": 1.1913220882,
+            "dist": 12683.387579,
+            "info": "search:ta:492009007467571-MC",
+            "poi": {
+                "name": "L'Espace Fontvieille",
+                "phone": "+377 92 05 26 00",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.chapiteau-monaco.com",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "5",
+                "streetName": "Avenue des Ligures",
+                "municipalitySubdivision": "Fontvieille",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue des Ligures 5, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.72588,
+                "lon": 7.41827
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.72678,
+                    "lon": 7.41703
+                },
+                "btmRightPoint": {
+                    "lat": 43.72498,
+                    "lon": 7.41951
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.72576,
+                        "lon": 7.41814
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "VALkhrTtTcB3yW0aGgqERg",
+            "score": 1.1912127733,
+            "dist": 12715.305141,
+            "info": "search:ta:492008000021690-MC",
+            "poi": {
+                "name": "Espace Léo Ferré",
+                "phone": "+377 93 10 12 10",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.espaceleoferre.mc",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "25-29",
+                "streetName": "Avenue Albert II",
+                "municipalitySubdivision": "Fontvieille",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue Albert II 25-29, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.730724,
+                "lon": 7.4176
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.73162,
+                    "lon": 7.41636
+                },
+                "btmRightPoint": {
+                    "lat": 43.72982,
+                    "lon": 7.41884
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.73066,
+                        "lon": 7.41769
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "RV61LGWLqlElHIQWACwe6Q",
+            "score": 1.1885621548,
+            "dist": 13471.447426,
+            "info": "search:ta:492009007467774-MC",
+            "poi": {
+                "name": "Salle d'Exposition du Quai Antoine 1er",
+                "phone": "+377 97 70 25 50",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.marlborough-monaco.com",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "4",
+                "streetName": "Quai Antoine 1er",
+                "municipalitySubdivision": "La Condamine",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Quai Antoine 1er 4, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.733227,
+                "lon": 7.426526
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.73413,
+                    "lon": 7.42528
+                },
+                "btmRightPoint": {
+                    "lat": 43.73233,
+                    "lon": 7.42777
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.73315,
+                        "lon": 7.42661
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "3DDnoseqbH0dVAYDrxBGlQ",
+            "score": 1.1883277893,
+            "dist": 13536.751614,
+            "info": "search:ta:492009007467170-MC",
+            "poi": {
+                "name": "Centre de Rencontres Internationales",
+                "phone": "+377 93 10 86 00",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "12",
+                "streetName": "Avenue d'Ostende",
+                "municipalitySubdivision": "Monte-Carlo",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue d'Ostende 12, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.73768,
+                "lon": 7.426051
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.73858,
+                    "lon": 7.42481
+                },
+                "btmRightPoint": {
+                    "lat": 43.73678,
+                    "lon": 7.4273
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.73778,
+                        "lon": 7.42604
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "nNBgMFPYy7l3HuY7MLuYMg",
+            "score": 1.1878355742,
+            "dist": 13673.26952,
+            "info": "search:ta:492009007467471-MC",
+            "poi": {
+                "name": "Hôtel de Paris Monte-Carlo",
+                "phone": "+377 98 06 17 17",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.hoteldeparismontecarlo.com",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetName": "Place du Casino",
+                "municipalitySubdivision": "Monte-Carlo",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Place du Casino, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.738832,
+                "lon": 7.427423
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.73973,
+                    "lon": 7.42618
+                },
+                "btmRightPoint": {
+                    "lat": 43.73793,
+                    "lon": 7.42867
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.73915,
+                        "lon": 7.42766
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "6TAPTnuVL0lwl5T-KDAF8w",
+            "score": 1.1873641014,
+            "dist": 13803.121948,
+            "info": "search:ta:492007000001619-MC",
+            "poi": {
+                "name": "Auditorium Rainier III",
+                "phone": "+377 93 10 84 00",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.monaco-spectacle.com",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetName": "Boulevard Louis II",
+                "municipalitySubdivision": "La Condamine",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Boulevard Louis II, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.738383,
+                "lon": 7.42923
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.73928,
+                    "lon": 7.42799
+                },
+                "btmRightPoint": {
+                    "lat": 43.73748,
+                    "lon": 7.43047
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.73757,
+                        "lon": 7.42909
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "BQwCuFkxmT8DF1CGk-jB1A",
+            "score": 1.1870012283,
+            "dist": 13902.482765,
+            "info": "search:ta:492009007468717-MC",
+            "poi": {
+                "name": "Fairmont Monte Carlo",
+                "phone": "+377 93 50 65 00",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.fairmont.com/monte-carlo/",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "12",
+                "streetName": "Avenue des Spélugues",
+                "municipalitySubdivision": "Monte-Carlo",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue des Spélugues 12, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.740012,
+                "lon": 7.429963
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.74091,
+                    "lon": 7.42872
+                },
+                "btmRightPoint": {
+                    "lat": 43.73911,
+                    "lon": 7.43121
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.74022,
+                        "lon": 7.42954
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "NobMjDMt1AQyzzP6aWiXag",
+            "score": 1.186242342,
+            "dist": 14108.647617,
+            "info": "search:ta:492009007492405-MC",
+            "poi": {
+                "name": "Grimaldi Forum",
+                "phone": "+377 99 99 20 00",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.grimaldiforum.com",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "10",
+                "streetName": "Avenue Princesse Grace",
+                "municipalitySubdivision": "Larvotto",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue Princesse Grace 10, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.743311,
+                "lon": 7.431439
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.74421,
+                    "lon": 7.43019
+                },
+                "btmRightPoint": {
+                    "lat": 43.74241,
+                    "lon": 7.43268
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.74305,
+                        "lon": 7.43074
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "p1XJ7xDGBid15gy7nULRDA",
+            "score": 1.1846005917,
+            "dist": 14547.625872,
+            "info": "search:ta:492009007467803-MC",
+            "poi": {
+                "name": "Sea Club Conference Centre",
+                "phone": "+377 93 30 98 80",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.lemeridienmontecarlo.com/en/meetings",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "20",
+                "streetName": "Avenue Princesse Grace",
+                "municipalitySubdivision": "Larvotto",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue Princesse Grace 20, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.748015,
+                "lon": 7.435264
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.74891,
+                    "lon": 7.43402
+                },
+                "btmRightPoint": {
+                    "lat": 43.74712,
+                    "lon": 7.43651
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.74806,
+                        "lon": 7.43513
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "111OjmwxTOzvR4eqEf7G_w",
+            "score": 1.1845244169,
+            "dist": 14567.778226,
+            "info": "search:ta:492009007467401-MC",
+            "poi": {
+                "name": "Le Carré",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "22",
+                "streetName": "Avenue Princesse Grace",
+                "municipalitySubdivision": "Larvotto",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue Princesse Grace 22, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.748144,
+                "lon": 7.435472
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.74904,
+                    "lon": 7.43423
+                },
+                "btmRightPoint": {
+                    "lat": 43.74724,
+                    "lon": 7.43672
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.7485,
+                        "lon": 7.43584
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "iOp4UGMm5NoFNtEJTAT7CA",
+            "score": 1.1838065386,
+            "dist": 14756.701164,
+            "info": "search:ta:492009007467470-MC",
+            "poi": {
+                "name": "Sporting Monte-Carlo-Salle des Étoiles",
+                "phone": "+377 98 06 36 36",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "fr.montecarlosbm.com/bien-etre-sport/salles-de-concerts/salle-etoiles",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "26",
+                "streetName": "Avenue Princesse Grace",
+                "municipalitySubdivision": "Larvotto",
+                "municipality": "Monaco",
+                "postalCode": "98000",
+                "countryCode": "MC",
+                "country": "Monaco",
+                "countryCodeISO3": "MCO",
+                "freeformAddress": "Avenue Princesse Grace 26, Monaco, 98000",
+                "localName": "Monaco"
+            },
+            "position": {
+                "lat": 43.747465,
+                "lon": 7.438205
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.74899,
+                    "lon": 7.43609
+                },
+                "btmRightPoint": {
+                    "lat": 43.74594,
+                    "lon": 7.44032
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.74899,
+                        "lon": 7.43823
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "YR49twLShXp3sbWGp8xx3Q",
+            "score": 1.1632666588,
+            "dist": 19671.092259,
+            "info": "search:ta:250009008136959-FR",
+            "poi": {
+                "name": "Palais des Congrès",
+                "phone": "+33 4 22 10 60 01",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.antibes-juanlespins.com",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "60",
+                "streetName": "Chemin des Sables",
+                "municipality": "Antibes",
+                "countrySecondarySubdivision": "Alpes-Maritimes",
+                "countrySubdivision": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionName": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionCode": "PAC",
+                "postalCode": "06160",
+                "countryCode": "FR",
+                "country": "France",
+                "countryCodeISO3": "FRA",
+                "freeformAddress": "60 Chemin des Sables, 06160 Antibes",
+                "localName": "Antibes"
+            },
+            "position": {
+                "lat": 43.568336,
+                "lon": 7.115861
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.56924,
+                    "lon": 7.11462
+                },
+                "btmRightPoint": {
+                    "lat": 43.56744,
+                    "lon": 7.1171
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.56796,
+                        "lon": 7.11567
+                    }
+                },
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.56825,
+                        "lon": 7.11522
+                    }
+                }
+            ]
+        },
+        {
+            "type": "POI",
+            "id": "lJ68z9bBx1FF7e3y2agSDA",
+            "score": 1.1606967449,
+            "dist": 20241.587265,
+            "info": "search:ta:250009007857658-FR",
+            "poi": {
+                "name": "Palais de l'Europe",
+                "phone": "+33 4 92 41 76 76",
+                "categorySet": [
+                    {
+                        "id": 9377
+                    }
+                ],
+                "url": "www.tourisme-menton.fr",
+                "categories": [
+                    "exhibition convention center"
+                ],
+                "classifications": [
+                    {
+                        "code": "EXHIBITION_CONVENTION_CENTER",
+                        "names": [
+                            {
+                                "nameLocale": "en-US",
+                                "name": "exhibition convention center"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "address": {
+                "streetNumber": "8",
+                "streetName": "Avenue Boyer",
+                "municipality": "Menton",
+                "countrySecondarySubdivision": "Alpes-Maritimes",
+                "countrySubdivision": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionName": "Provence-Alpes-Côte d'Azur",
+                "countrySubdivisionCode": "PAC",
+                "postalCode": "06500",
+                "countryCode": "FR",
+                "country": "France",
+                "countryCodeISO3": "FRA",
+                "freeformAddress": "8 Avenue Boyer, 06500 Menton",
+                "localName": "Menton"
+            },
+            "position": {
+                "lat": 43.774414,
+                "lon": 7.497711
+            },
+            "viewport": {
+                "topLeftPoint": {
+                    "lat": 43.77531,
+                    "lon": 7.49647
+                },
+                "btmRightPoint": {
+                    "lat": 43.77351,
+                    "lon": 7.49896
+                }
+            },
+            "entryPoints": [
+                {
+                    "type": "main",
+                    "position": {
+                        "lat": 43.774,
+                        "lon": 7.4977
+                    }
+                }
+            ]
+        }
+    ]
+}

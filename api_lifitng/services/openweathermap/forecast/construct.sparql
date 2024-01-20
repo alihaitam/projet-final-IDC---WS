@@ -1,0 +1,63 @@
+prefix : <http://ns.inria.fr/sparql-micro-service/api#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX schema: <http://schema.org/#>
+prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+CONSTRUCT {
+    ?forecast
+        a schema:forecast;
+        schema:dt ?dt;
+        schema:dt_txt ?dt_txt;
+        schema:temp ?temp;
+        schema:feels_like ?feels_like;
+        schema:temp_min ?temp_min;
+        schema:temp_max ?temp_max;
+        schema:pressure ?pressure;
+        schema:humidity ?humidity;
+        schema:id ?id;
+        schema:main ?main;
+        schema:description ?description;
+        schema:icon ?icon;
+        schema:windSpeed ?speed;
+        schema:cityName ?cityName;
+        schema:cityCountry ?cityCountry;
+}
+
+WHERE {
+    [] :city [
+        :id ?cityId;
+        :name ?cityName;
+        :coord [
+            :lat ?cityLat;
+            :lon ?cityLon;
+        ];
+        :country ?cityCountry;
+        :population ?cityPopulation;
+        :timezone ?cityTimezone;
+    ]
+    [] :list [
+            :dt ?dt;
+            :main [
+                :temp ?temp;
+                :feels_like ?feels_like;
+                :temp_min ?temp_min;
+                :temp_max ?temp_max;
+                :pressure ?pressure;
+                :humidity ?humidity;
+            ];
+            :weather [
+                :id ?id;
+                :main ?main;
+                :description ?description;
+                :icon ?icon;
+            ];
+            :wind [
+                :speed ?speed;
+                :deg ?deg;
+            ];
+            :dt_txt ?dt_txt;
+        ].
+        # Bind the IRI for the hotel to a variable ?hotel
+        BIND(IRI(CONCAT("http://example.org/hotel/", STR(?dt))) AS ?forecast)
+}

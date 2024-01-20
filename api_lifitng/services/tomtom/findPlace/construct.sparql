@@ -1,0 +1,55 @@
+prefix : <http://ns.inria.fr/sparql-micro-service/api#>
+prefix xsd: <http://www.w3.org/2001/XMLSchema#> 
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX schema: <http://schema.org/#>
+prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+CONSTRUCT {
+    ?Place
+        a schema:Place;
+        # schema:identifier ?placeId;
+        schema:name ?placeName;
+        # schema:category ?categories;
+        schema:address [
+            # a schema:PostalAddress;
+            # schema:streetAddress ?streetName;
+            # schema:addressLocality ?municipality;
+            # schema:postalCode ?postalCode;
+            # schema:addressCountry ?country;
+            # schema:addressCountryCode ?countryCode;
+            schema:addressRegion ?freeformAddress;
+        ];
+        # schema:geo [
+        #     a schema:GeoCoordinates;
+        #     schema:latitude ?lat;
+        #     schema:longitude ?lon;
+        # ];
+}
+
+WHERE {
+    [] :results [
+            :type ?placeType;
+            :id ?placeId;
+            :poi [
+                :name ?placeName;
+                :categorySet [
+                    :id ?categoryId;
+                ];
+                :categories ?categories;
+            ];
+            :address [
+                :streetName ?streetName;
+                :municipality ?municipality;
+                :postalCode ?postalCode;
+                :country ?country;
+                :countryCode ?countryCode;
+                :freeformAddress ?freeformAddress;
+            ];
+            :position [
+                :lat ?lat;
+                :lon ?lon;
+            ]
+        ].
+        # Bind the IRI for the hotel to a variable ?hotel
+        BIND(IRI(CONCAT("http://example.org/hotel/", STR(?placeId))) AS ?Place)
+}
