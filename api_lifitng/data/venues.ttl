@@ -1,0 +1,176 @@
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ns1: <http://schema.org/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+
+<http://example.org/hotel/vX1ApjoT4b-TlBNgDPmTlg> ns1:address _:b5679 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5680 ;
+ns1:identifier "vX1ApjoT4b-TlBNgDPmTlg" ;
+ns1:name "Centre de Congrès Cité Mondiale" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/diEamcNeZVGdoD_ohC_N6A> ns1:address _:b5681 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5682 ;
+ns1:identifier "diEamcNeZVGdoD_ohC_N6A" ;
+ns1:name "Hangar 14" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/uFN8PhI97foOg7fygy_UtA> ns1:address _:b5683 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5684 ;
+ns1:identifier "uFN8PhI97foOg7fygy_UtA" ;
+ns1:name "Cité du Vin" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/E7H63MsLY0OTW2ego01QTA> ns1:address _:b5687 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5688 ;
+ns1:identifier "E7H63MsLY0OTW2ego01QTA" ;
+ns1:name "Palais de la Bourse" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/C8T8qVRsd1qAYwv1DXLgwg> ns1:address _:b5685 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5686 ;
+ns1:identifier "C8T8qVRsd1qAYwv1DXLgwg" ;
+ns1:name "Palais des Congrès" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/l3RT-lB0Eao9U0mmAkkUDg> ns1:address _:b5689 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5690 ;
+ns1:identifier "l3RT-lB0Eao9U0mmAkkUDg" ;
+ns1:name "Parc des Expositions de Bordeaux" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/x7yTd4pi4nkNhcGW1LfxgQ> ns1:address _:b5691 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5692 ;
+ns1:identifier "x7yTd4pi4nkNhcGW1LfxgQ" ;
+ns1:name "Centre d'Affaires BBS Bordeaux Lac" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/39yEyOHDd0kdIhkQLw9oOw> ns1:address _:b5693 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5694 ;
+ns1:identifier "39yEyOHDd0kdIhkQLw9oOw" ;
+ns1:name "Bernard Magrez Art Institute" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/5b68rDwAlAKjV3wS3B0yLQ> ns1:address _:b5695 ;
+ns1:category "exhibition convention center" ;
+ns1:geo _:b5696 ;
+ns1:identifier "5b68rDwAlAKjV3wS3B0yLQ" ;
+ns1:name "Parc des Expositions" ;
+rdf:type ns1:Place .
+
+_:b5689 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "Allée Louis Ratabou, 33300 Bordeaux" ;
+ns1:postalCode "33300" ;
+ns1:streetAddress "Allée Louis Ratabou" ;
+rdf:type ns1:PostalAddress .
+
+_:b5688 ns1:latitude "4.4842041E1"^^xsd:double ;
+ns1:longitude "-5.70628E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5687 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "17 Place de la Bourse, 33000 Bordeaux" ;
+ns1:postalCode "33000" ;
+ns1:streetAddress "Place de la Bourse" ;
+rdf:type ns1:PostalAddress .
+
+_:b5686 ns1:latitude "4.4888358E1"^^xsd:double ;
+ns1:longitude "-5.67756E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5685 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "Avenue Jean-Gabriel Domergue, 33300 Bordeaux" ;
+ns1:postalCode "33300" ;
+ns1:streetAddress "Avenue Jean-Gabriel Domergue" ;
+rdf:type ns1:PostalAddress .
+
+_:b5684 ns1:latitude "4.4862089E1"^^xsd:double ;
+ns1:longitude "-5.50125E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5683 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "Esplanade de Pontac, 33300 Bordeaux" ;
+ns1:postalCode "33300" ;
+ns1:streetAddress "Esplanade de Pontac" ;
+rdf:type ns1:PostalAddress .
+
+_:b5682 ns1:latitude "4.4855002E1"^^xsd:double ;
+ns1:longitude "-5.638879999999999E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5681 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "Quai des Chartrons, 33300 Bordeaux" ;
+ns1:postalCode "33300" ;
+ns1:streetAddress "Quai des Chartrons" ;
+rdf:type ns1:PostalAddress .
+
+_:b5680 ns1:latitude "4.4849903E1"^^xsd:double ;
+ns1:longitude "-5.71267E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5696 ns1:latitude "4.4617677E1"^^xsd:double ;
+ns1:longitude "-1.120733E0"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5695 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "La Teste-de-Buch" ;
+ns1:addressRegion "Avenue de l'Europe, 33260 La Teste-de-Buch" ;
+ns1:postalCode "33260" ;
+ns1:streetAddress "Avenue de l'Europe" ;
+rdf:type ns1:PostalAddress .
+
+_:b5694 ns1:latitude "4.4853763E1"^^xsd:double ;
+ns1:longitude "-5.89485E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5693 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "Rue Labottière, 33000 Bordeaux" ;
+ns1:postalCode "33000" ;
+ns1:streetAddress "Rue Labottière" ;
+rdf:type ns1:PostalAddress .
+
+_:b5692 ns1:latitude "4.4875865E1"^^xsd:double ;
+ns1:longitude "-5.7604E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5691 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "Rue Robert Caumont, 33300 Bordeaux" ;
+ns1:postalCode "33300" ;
+ns1:streetAddress "Rue Robert Caumont" ;
+rdf:type ns1:PostalAddress .
+
+_:b5690 ns1:latitude "4.4893047E1"^^xsd:double ;
+ns1:longitude "-5.70668E-1"^^xsd:double ;
+rdf:type ns1:GeoCoordinates .
+
+_:b5679 ns1:addressCountry "France" ;
+ns1:addressCountryCode "FR" ;
+ns1:addressLocality "Bordeaux" ;
+ns1:addressRegion "18 Parvis des Chartrons, 33000 Bordeaux" ;
+ns1:postalCode "33000" ;
+ns1:streetAddress "Parvis des Chartrons" ;
+rdf:type ns1:PostalAddress .
+

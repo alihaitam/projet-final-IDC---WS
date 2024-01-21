@@ -25,7 +25,10 @@ fi
 # URL-encoded query: construct where {?s ?p ?o}
 CONSTRUCT="construct%20WHERE%20%7B%20%3Fs%20%3Fp%20%3Fo%20%7D%20"
 
-# Second API call with lat and lon
-curl --header "Accept: text/turtle" "http://localhost/service/tomtom/findPlace?categorySet=9377&lat=${lat}&lon=${lon}&query=${CONSTRUCT}" > ../api_lifting/venues.ttl
+# Create a 'data' directory in the current directory (if it doesn't already exist)
+mkdir -p ./api_lifitng/data
 
-echo "Results saved to venues.ttl"
+# Second API call with lat and lon
+curl --header "Accept: text/turtle" "http://localhost/service/tomtom/findPlace?categorySet=9377&lat=${lat}&lon=${lon}&query=${CONSTRUCT}" > ./api_lifitng/data/venues.ttl
+
+echo "Results saved to ./api_lifitng/data/venues.ttl"
