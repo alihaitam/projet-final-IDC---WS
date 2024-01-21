@@ -12,17 +12,10 @@ CONSTRUCT {
         schema:category ?categories;
         schema:address [
             a schema:PostalAddress;
-            schema:streetAddress ?streetName;
-            schema:addressLocality ?municipality;
-            schema:postalCode ?postalCode;
-            schema:addressCountry ?country;
-            schema:addressCountryCode ?countryCode;
-            schema:addressRegion ?freeformAddress;
-        ];
-        schema:geo [
-            a schema:GeoCoordinates;
-            schema:latitude ?lat;
-            schema:longitude ?lon;
+            schema:city ?municipality;
+            schema:country ?country;
+            schema:countryCode ?countryCode;
+            schema:freeFormAddress ?freeformAddress;
         ];
 }
 
@@ -44,10 +37,6 @@ WHERE {
                 :country ?country;
                 :countryCode ?countryCode;
                 :freeformAddress ?freeformAddress;
-            ];
-            :position [
-                :lat ?lat;
-                :lon ?lon;
             ]
         ].
         # Bind the IRI for the hotel to a variable ?hotel
