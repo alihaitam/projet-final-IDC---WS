@@ -7,23 +7,23 @@ prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
 CONSTRUCT {
     ?Place
         a schema:Place;
-        # schema:identifier ?placeId;
+        schema:identifier ?placeId;
         schema:name ?placeName;
-        # schema:category ?categories;
+        schema:category ?categories;
         schema:address [
-            # a schema:PostalAddress;
-            # schema:streetAddress ?streetName;
-            # schema:addressLocality ?municipality;
-            # schema:postalCode ?postalCode;
-            # schema:addressCountry ?country;
-            # schema:addressCountryCode ?countryCode;
+            a schema:PostalAddress;
+            schema:streetAddress ?streetName;
+            schema:addressLocality ?municipality;
+            schema:postalCode ?postalCode;
+            schema:addressCountry ?country;
+            schema:addressCountryCode ?countryCode;
             schema:addressRegion ?freeformAddress;
         ];
-        # schema:geo [
-        #     a schema:GeoCoordinates;
-        #     schema:latitude ?lat;
-        #     schema:longitude ?lon;
-        # ];
+        schema:geo [
+            a schema:GeoCoordinates;
+            schema:latitude ?lat;
+            schema:longitude ?lon;
+        ];
 }
 
 WHERE {

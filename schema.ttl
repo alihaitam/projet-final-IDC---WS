@@ -1,0 +1,88 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pice: <http://example.com/pice#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+# Ontology Declaration
+pice: a owl:Ontology ;
+    rdfs:comment "Ontology for the PICE event planning system." .
+
+# Class Definitions
+pice:Event rdf:type owl:Class ;
+    rdfs:label "Event" ;
+    rdfs:comment "A planned public or social occasion." .
+
+pice:Venue rdf:type owl:Class ;
+    rdfs:label "Venue" ;
+    rdfs:comment "The place where something happens, especially an organized event." .
+
+pice:MeteorologicalCondition rdf:type owl:Class ;
+    rdfs:label "Meteorological Condition" ;
+    rdfs:comment "The state of the atmosphere at a place and time as regards heat, cloudiness, dryness, sunshine, wind, rain, etc." .
+
+pice:ServiceProvider rdf:type owl:Class ;
+    rdfs:label "Service Provider" ;
+    rdfs:comment "A company that provides services for events, such as catering, music, or lighting." .
+
+pice:Agenda rdf:type owl:Class ;
+    rdfs:label "Agenda" ;
+    rdfs:comment "A list of items to be discussed or acted upon, prepared before meetings, events, and conferences." .
+
+pice:Participant rdf:type owl:Class ;
+    rdfs:label "Participant" ;
+    rdfs:comment "An individual who attends or takes part in the event." .
+
+pice:Equipment rdf:type owl:Class ;
+    rdfs:label "Equipment" ;
+    rdfs:comment "The necessary items for a particular purpose, such as audio-visual equipment for an event." .
+
+# Property Definitions
+pice:hasVenue rdf:type owl:ObjectProperty ;
+    rdfs:domain pice:Event ;
+    rdfs:range pice:Venue ;
+    rdfs:label "has venue" ;
+    rdfs:comment "The venue where the event takes place." .
+
+pice:hasMeteorologicalCondition rdf:type owl:ObjectProperty ;
+    rdfs:domain pice:Event ;
+    rdfs:range pice:MeteorologicalCondition ;
+    rdfs:label "has meteorological condition" ;
+    rdfs:comment "The meteorological conditions forecasted for the event's location and time." .
+
+pice:providedBy rdf:type owl:ObjectProperty ;
+    rdfs:domain pice:ServiceProvider ;
+    rdfs:range pice:Event ;
+    rdfs:label "provided by" ;
+    rdfs:comment "The service provider that offers services for the event." .
+
+pice:hasAgenda rdf:type owl:ObjectProperty ;
+    rdfs:domain pice:Event ;
+    rdfs:range pice:Agenda ;
+    rdfs:label "has agenda" ;
+    rdfs:comment "The agenda of the event." .
+
+pice:hasParticipant rdf:type owl:ObjectProperty ;
+    rdfs:domain pice:Event ;
+    rdfs:range pice:Participant ;
+    rdfs:label "has participant" ;
+    rdfs:comment "A participant in the event." .
+
+pice:hasEquipment rdf:type owl:ObjectProperty ;
+    rdfs:domain pice:Event ;
+    rdfs:range pice:Equipment ;
+    rdfs:label "has equipment" ;
+    rdfs:comment "The equipment used for the event." .
+
+# Example Instances
+pice:myEvent rdf:type pice:Event ;
+    rdfs:label "My Birthday Party" ;
+    pice:hasVenue pice:venue123 ;
+    pice:hasMeteorologicalCondition pice:weatherSunny ;
+    pice:providedBy pice:cateringCompanyA, pice:DJMike, pice:LightingPros ;
+    pice:hasAgenda pice:agenda456 ;
+    pice:hasParticipant pice:JohnDoe, pice:JaneSmith ;
+    pice:hasEquipment pice:Projector123 .
+
+# ... Further instances and properties as required ...
