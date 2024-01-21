@@ -1,0 +1,82 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pice: <http://example.com/pice#> .
+
+# Concepts de base
+pice:EventSpace a skos:Concept ;
+    skos:prefLabel "Event Space"@en ;
+    skos:definition "A space where events such as parties, conferences, or weddings are held."@en .
+
+pice:City a skos:Concept ;
+    skos:prefLabel "City"@en ;
+    skos:definition "A large town or populated area where events can take place."@en .
+
+# Types d'événements
+pice:Party a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Party"@en ;
+    skos:definition "A social gathering of invited guests, typically involving eating, drinking, and entertainment."@en .
+
+pice:Conference a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Conference"@en ;
+    skos:definition "A formal meeting for discussion, typically one that takes place over several days."@en .
+
+pice:Wedding a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Wedding"@en ;
+    skos:definition "A marriage ceremony, especially considered as including the associated celebrations."@en .
+
+# Services d'événements
+pice:Catering a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Catering"@en ;
+    skos:definition "The business of providing food service at a remote site or a site such as a hotel, public house, or other location."@en .
+
+pice:Entertainment a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Entertainment"@en ;
+    skos:definition "Activity designed to give people pleasure or relaxation during the event."@en .
+
+pice:AudioVisualEquipment a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Audio Visual Equipment"@en ;
+    skos:definition "Electronic media equipment used for the event, such as microphones, projectors, and screens."@en .
+
+# Types de participants
+pice:Guest a skos:Concept ;
+    skos:broader pice:Participant ;
+    skos:prefLabel "Guest"@en ;
+    skos:definition "A person invited to an event or a party."@en .
+
+pice:Speaker a skos:Concept ;
+    skos:broader pice:Participant ;
+    skos:prefLabel "Speaker"@en ;
+    skos:definition "A person who delivers a speech or lecture at a conference or event."@en .
+
+# Villes supplémentaires (Exemples)
+pice:London a skos:Concept ;
+    skos:broader pice:City ;
+    skos:prefLabel "London"@en ;
+    skos:definition "The capital city of the United Kingdom, known for its historical landmarks and cultural heritage."@en .
+
+pice:Tokyo a skos:Concept ;
+    skos:broader pice:City ;
+    skos:prefLabel "Tokyo"@en ;
+    skos:definition "The capital city of Japan, known for its modernity, technology, and rich cultural tapestry."@en .
+
+# Relations
+pice:London skos:related pice:Party, pice:Wedding, pice:Conference, pice:Catering, pice:Entertainment .
+pice:Tokyo skos:related pice:Party, pice:Wedding, pice:Conference, pice:Catering, pice:Entertainment .
+
+# Collections SKOS
+pice:EventTypes a skos:Collection ;
+    skos:member pice:Party, pice:Conference, pice:Wedding .
+
+pice:EventServices a skos:Collection ;
+    skos:member pice:Catering, pice:Entertainment, pice:AudioVisualEquipment .
+
+pice:ParticipantTypes a skos:Collection ;
+    skos:member pice:Guest, pice:Speaker .
+
+pice:Cities a skos:Collection ;
+    skos:member pice:Paris, pice:NewYork, pice:London, pice:Tokyo .

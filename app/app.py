@@ -1,6 +1,6 @@
 import streamlit as st
 import subprocess
-from rdflib import Graph, Namespace
+from rdflib import Graph, Namespace, ConjunctiveGraph
 import streamlit.components.v1 as components
 
 # Function to call the Bash script for coordinates
@@ -58,12 +58,51 @@ def get_weather_info(city_name):
         return str(e)
 
 
+# Function to run the federated query
+def run_federated_query(city_name):
+    try:
+        # Load the local .ttl file into a graph
+        g = ConjunctiveGraph()
+        g.parse("C:/Users/user/Desktop/projet 100%/projet-final-IDC-WS/csv_lifitng/prestataires.ttl", format="turtle")
+
+        # SPARQL federated query
+        query = f"""
+        PREFIX : <http://ns.inria.fr/sparql-micro-service/api#>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX schema: <http://schema.org/#>
+        PREFIX org: <file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#>
+
+        SELECT ?city ?organizer ?theme ?description
+        WHERE {{
+            ?organizer org:theme ?theme ;
+                org:city ?city .	
+
+            SERVICE <http://localhost/service/openweathermap/forecast?city={city_name}> {{
+                ?forecast schema:temp ?temp ;
+                schema:dt_txt ?dt_txt ;
+                schema:description ?description ;
+                schema:cityName ?cityName .
+            }}
+            FILTER (STR(?cityName) = STR(?city))
+        }}
+        ORDER BY (?dt)
+        """
+
+        # Execute the federated query
+        results = g.query(query)
+        print("XXXXXXXXXXX", results)
+
+        return results
+
+    except Exception as e:
+        return str(e)
+    
+
 # Function to create HTML for the weather cards
 def create_weather_cards(weather_results):
     cards_html = '<div style="display: flex; overflow-x: auto;">'
     for row in weather_results:
-        # print the icon code
-        print("XXXX", row.icon)
         # Check if icon data exists for this row
         if hasattr(row, 'icon') and row.icon:
             icon_code = row.icon
@@ -106,6 +145,23 @@ def main():
     with st.form(key='city_form'):
         city_name = st.text_input('Enter the name of a city')
         submit_button = st.form_submit_button(label='Find and Process')
+
+    # Input form for federated query
+    with st.form(key='federated_query_form'):
+        city_name_query = st.text_input('Enter the name of a city for details')
+        get_info_button = st.form_submit_button(label='Get Infos')
+
+    if get_info_button:
+        if city_name_query:
+            # Run federated query
+            federated_results = run_federated_query(city_name_query)
+            # You'll need to decide how to display these results.
+            # This is an example using markdown, you might want to format it into a table or differently
+            st.markdown("## Federated Query Results")
+            for row in federated_results:
+                st.markdown(f"- Organizer: {row.organizer}, Theme: {row.theme}, Description: {row.description}")
+        else:
+            st.error("Please enter a city name for details")
 
     if submit_button:
         if city_name:

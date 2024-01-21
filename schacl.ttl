@@ -1,0 +1,87 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix pice: <http://example.com/pice#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+pice:EventShape a sh:NodeShape ;
+    sh:targetClass dbo:Event ;
+    sh:property [
+        sh:path dbo:startDate ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dbo:endDate ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dbo:location ;
+        sh:class pice:Venue ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dbo:theme ;
+        sh:datatype xsd:string ;
+        sh:minLength 3 ;
+        sh:maxLength 100 ;
+    ] .
+
+# Contraintes pour foaf:Person
+pice:PersonShape a sh:NodeShape ;
+    sh:targetClass foaf:Person ;
+    sh:property [
+        sh:path foaf:knows ;
+        sh:class foaf:Person ;
+        sh:minCount 1 ;
+    ] .
+
+# Assurez-vous que la startDate est antérieure à la endDate
+pice:EventDateConsistencyShape a sh:NodeShape ;
+    sh:targetClass dbo:Event ;
+    sh:property [
+        sh:path dbo:startDate ;
+        sh:lessThan dbo:endDate ;
+    ] .
+
+# Contraintes pour pice:Venue
+pice:VenueShape a sh:NodeShape ;
+    sh:targetClass pice:Venue ;
+    # Ajoutez ici des contraintes spécifiques pour Venue
+    # Exemple: contrainte sur une propriété adresse
+    sh:property [
+        sh:path vcard:address ;
+        sh:datatype xsd:string ;
+    ] .
+
+
+# Contraintes pour dbo:Organisation
+pice:OrganisationShape a sh:NodeShape ;
+    sh:targetClass dbo:Organisation ;
+    # Exemple: contrainte sur une propriété comme organisationName
+    sh:property [
+        sh:path foaf:name ;
+        sh:datatype xsd:string ;
+    ] .
+
+# Contraintes pour pice:Agenda
+pice:AgendaShape a sh:NodeShape ;
+    sh:targetClass pice:Agenda ;
+    # Exemple: contrainte sur les éléments de l'agenda
+    sh:property [
+        sh:path pice:agendaItem ; # Assurez-vous que pice:agendaItem est défini dans votre modèle
+        sh:minCount 1 ;
+    ] .
+
+# Contraintes pour pice:Equipment
+pice:EquipmentShape a sh:NodeShape ;
+    sh:targetClass pice:Equipment ;
+    # Exemple: contrainte sur une propriété comme equipmentType
+    sh:property [
+        sh:path pice:equipmentType ; # Assurez-vous que pice:equipmentType est défini dans votre modèle
+        sh:datatype xsd:string ;
+    ] .
