@@ -43,7 +43,7 @@ def run_venueCategory_query(venueCategory, city_name):
     PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
     PREFIX org: <file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#>
 
-    SELECT ?venueName ?venueAddress ?venueCity ?providerName ?providerPrice ?providerPhone ?provviderCity
+    SELECT ?venueName ?venueAddress ?venueCity ?providerName ?providerPrice ?providerPhone ?providerCity
     WHERE {{
     {{
         ?place ns1:name ?venueName .

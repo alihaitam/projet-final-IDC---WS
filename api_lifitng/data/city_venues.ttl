@@ -22,130 +22,139 @@ ns1:identifier "g1VnXmuwIJ_DT2ft0qT0aA" ;
 ns1:name "Le Mas des Bartavelles" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/WsL6PrEwolqMH4YqlhupQA> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/9NgxTeAVF49S4RmYv-9qhw> ns1:category "cinema" ;
+ns1:city "Valbonne" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "604 Boulevard du Mercantour, 06200 Nice" ;
-ns1:identifier "WsL6PrEwolqMH4YqlhupQA" ;
-ns1:name "Pathé Nice Lingostière" ;
+ns1:freeFormAddress "190 Rue Frédéric Mistral, 06560 Valbonne" ;
+ns1:identifier "9NgxTeAVF49S4RmYv-9qhw" ;
+ns1:name "Le Cinéma de l'Alma" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/X_Uj_t50yhKtQ_w9nvGT_A> ns1:category "cinema" ;
-ns1:city "Carros" ;
+<http://example.org/hotel/ovOfDlJXjeXkxuatEbfYIA> ns1:category "cinema" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "5 Boulevard de la Colle Belle, 06510 Carros" ;
-ns1:identifier "X_Uj_t50yhKtQ_w9nvGT_A" ;
-ns1:name "Salle Juliette Gréco" ;
+ns1:freeFormAddress "23 Avenue du Docteur Raymond Picaud, 06400 Cannes" ;
+ns1:identifier "ovOfDlJXjeXkxuatEbfYIA" ;
+ns1:name "Studio 13-MJC Picaud" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/d7O1h3MOf0kj_oiqzPaxYA> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/3FpUn1xdhYYcJHTCxH57fw> ns1:category "cinema" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "4 Rue de Rivoli, 06000 Nice" ;
-ns1:identifier "d7O1h3MOf0kj_oiqzPaxYA" ;
-ns1:name "Rialto" ;
+ns1:freeFormAddress "Rue d'Antibes, 06400 Cannes" ;
+ns1:identifier "3FpUn1xdhYYcJHTCxH57fw" ;
+ns1:name "Star Cinéma" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/LCENk9d3K2zY_8NkUld7SQ> ns1:category "cinema" ;
-ns1:city "Villefranche-sur-Mer" ;
+<http://example.org/hotel/Xm9ASHnaT2dUyu-WxNr1KA> ns1:category "cinema" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "La Citadelle, 06230 Villefranche-sur-Mer" ;
-ns1:identifier "LCENk9d3K2zY_8NkUld7SQ" ;
-ns1:name "Cinéma Plein Air La Citadelle" ;
+ns1:freeFormAddress "19 Boulevard Alexandre III, 06400 Cannes" ;
+ns1:identifier "Xm9ASHnaT2dUyu-WxNr1KA" ;
+ns1:name "Cinéma Alexandre III" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/tPfphWRwM-jYHVY7Dsz06Q> ns1:category "cinema" ;
-ns1:city "Saint-Jean-Cap-Ferrat" ;
+<http://example.org/hotel/cvEA1coLjSSR6X4_TDBfZw> ns1:category "cinema" ;
+ns1:city "Antibes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Avenue Denis Séméria, 06230 Saint-Jean-Cap-Ferrat" ;
-ns1:identifier "tPfphWRwM-jYHVY7Dsz06Q" ;
-ns1:name "Cinéma Municipal" ;
+ns1:freeFormAddress "6-8 Avenue Niquet, 06600 Antibes" ;
+ns1:identifier "cvEA1coLjSSR6X4_TDBfZw" ;
+ns1:name "Le Casino" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/AvAhUBhwKx6Ula1YhSOWcg> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/Esl6o7r3eoj6RzX6LemXrw> ns1:category "cinema" ;
+ns1:city "Mandelieu-la-Napoule" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "31 Rue Louis de Coppet, 06000 Nice" ;
-ns1:identifier "AvAhUBhwKx6Ula1YhSOWcg" ;
-ns1:name "Centre Culturel-Espace Magnan" ;
+ns1:freeFormAddress "1240 Avenue de la Mer, 06210 Mandelieu-la-Napoule" ;
+ns1:identifier "Esl6o7r3eoj6RzX6LemXrw" ;
+ns1:name "Le Calypso" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/DsYtVFf6-Dy2L8zxqOnumw> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/61KaOM_0WdERQuEbnO-_Gg> ns1:category "cinema" ;
+ns1:city "Mandelieu-la-Napoule" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "3 Esplanade du Président John Fitzgerald Kennedy, 06300 Nice" ;
-ns1:identifier "DsYtVFf6-Dy2L8zxqOnumw" ;
-ns1:name "Cinémathèque de Nice" ;
+ns1:freeFormAddress "809 Boulevard des Écureuils, 06210 Mandelieu-la-Napoule" ;
+ns1:identifier "61KaOM_0WdERQuEbnO-_Gg" ;
+ns1:name "Salle Léonard de Vinci" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/SRv4KoI83XONu8aqOf7G1A> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/npPKx_ha07AZQ3W0c0AH8Q> ns1:category "cinema" ;
+ns1:city "Mouans-Sartoux" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "20 Avenue Stephen Liégeard, 06100 Nice" ;
-ns1:identifier "SRv4KoI83XONu8aqOf7G1A" ;
-ns1:name "L'Éclat Villa d'Arson" ;
+ns1:freeFormAddress "13 Place Suzanne de Villeneuve, 06370 Mouans-Sartoux" ;
+ns1:identifier "npPKx_ha07AZQ3W0c0AH8Q" ;
+ns1:name "Plein Air Le Château" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/WBU5DRSOSs3PqWiHK-96ww> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/FdXbx5haG0t-yj5SRZ3p8Q> ns1:category "cinema" ;
+ns1:city "Le Cannet" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "16 Place Garibaldi, 06300 Nice" ;
-ns1:identifier "WBU5DRSOSs3PqWiHK-96ww" ;
-ns1:name "Cinéma Mercury" ;
+ns1:freeFormAddress "Boulevard Sadi Carnot, 06110 Le Cannet" ;
+ns1:identifier "FdXbx5haG0t-yj5SRZ3p8Q" ;
+ns1:name "Cinétoile Rocheville" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/QmimC7A8rlQtxWXMiyhzHQ> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/v1xDHUY3HJEz3TT8yxU7Ag> ns1:category "cinema" ;
+ns1:city "Mouans-Sartoux" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "5 Boulevard Victor Hugo, 06000 Nice" ;
-ns1:identifier "QmimC7A8rlQtxWXMiyhzHQ" ;
-ns1:name "Cinéma Variétés" ;
+ns1:freeFormAddress "201 Avenue de Cannes, 06370 Mouans-Sartoux" ;
+ns1:identifier "v1xDHUY3HJEz3TT8yxU7Ag" ;
+ns1:name "Ciné La Strada" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/SO7EKcnd7IIwy-7UZH4CjQ> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/TEvDPveV7TVhl_FAOOu1_g> ns1:category "cinema" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Place de la Gare du Sud, 06000 Nice" ;
-ns1:identifier "SO7EKcnd7IIwy-7UZH4CjQ" ;
-ns1:name "Pathé Gare du Sud" ;
+ns1:freeFormAddress "35 Rue Pasteur, 06400 Cannes" ;
+ns1:identifier "TEvDPveV7TVhl_FAOOu1_g" ;
+ns1:name "Espace Miramar" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/ScyyB7I2Ty4vYXcT2gw1NQ> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/Yy5ZUabI0KQ0rblLc9LSdg> ns1:category "cinema" ;
+ns1:city "Le Cannet" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "168 Boulevard de l'Ariane, 06300 Nice" ;
-ns1:identifier "ScyyB7I2Ty4vYXcT2gw1NQ" ;
-ns1:name "Théâtre Lino Ventura" ;
+ns1:freeFormAddress "1 Rue Victorien Sardou, 06110 Le Cannet" ;
+ns1:identifier "Yy5ZUabI0KQ0rblLc9LSdg" ;
+ns1:name "Le Cannet Toiles" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/xZrziAb4UNkbdlhsN3NxgQ> ns1:category "cinema" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/Rm_Ytm0CrCWFyOfjTGT6lQ> ns1:category "cinema" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "54 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "xZrziAb4UNkbdlhsN3NxgQ" ;
-ns1:name "Pathé Nice Le Paris" ;
+ns1:freeFormAddress "5 Rue d'Antibes, 06400 Cannes" ;
+ns1:identifier "Rm_Ytm0CrCWFyOfjTGT6lQ" ;
+ns1:name "Olympia" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/kMwiSBp0YFQghh7hkaiGLg> ns1:category "cinema" ;
-ns1:city "Beaulieu-sur-Mer" ;
+<http://example.org/hotel/d2zHIw1aVOTBnb43cIb2SQ> ns1:category "cinema" ;
+ns1:city "Vallauris" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Avenue Albert 1er, 06310 Beaulieu-sur-Mer" ;
-ns1:identifier "kMwiSBp0YFQghh7hkaiGLg" ;
-ns1:name "Le Cinéma de Beaulieu" ;
+ns1:freeFormAddress "Boulevard du Docteur Jacques Ugo, 06220 Vallauris" ;
+ns1:identifier "d2zHIw1aVOTBnb43cIb2SQ" ;
+ns1:name "Le Minotaure" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/ms56uKvxmhsTQvufJq2gyg> ns1:category "cinema" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "Chemin de la Borde, 06150 Cannes" ;
+ns1:identifier "ms56uKvxmhsTQvufJq2gyg" ;
+ns1:name "Salle Le Raimu" ;
 rdf:type ns1:Place .
 
 <http://example.org/hotel/pKt-bAtqSvWWOltTY4UrJA> ns1:category "beach club" ;
@@ -165,24 +174,6 @@ ns1:countryCode "MC" ;
 ns1:freeFormAddress "Avenue Albert II 25-29, Monaco, 98000" ;
 ns1:identifier "VALkhrTtTcB3yW0aGgqERg" ;
 ns1:name "Espace Léo Ferré" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/iOp4UGMm5NoFNtEJTAT7CA> ns1:category "exhibition convention center" ;
-ns1:city "Monaco" ;
-ns1:country "Monaco" ;
-ns1:countryCode "MC" ;
-ns1:freeFormAddress "Avenue Princesse Grace 26, Monaco, 98000" ;
-ns1:identifier "iOp4UGMm5NoFNtEJTAT7CA" ;
-ns1:name "Sporting Monte-Carlo-Salle des Étoiles" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/111OjmwxTOzvR4eqEf7G_w> ns1:category "exhibition convention center" ;
-ns1:city "Monaco" ;
-ns1:country "Monaco" ;
-ns1:countryCode "MC" ;
-ns1:freeFormAddress "Avenue Princesse Grace 22, Monaco, 98000" ;
-ns1:identifier "111OjmwxTOzvR4eqEf7G_w" ;
-ns1:name "Le Carré" ;
 rdf:type ns1:Place .
 
 <http://example.org/hotel/3DDnoseqbH0dVAYDrxBGlQ> ns1:category "exhibition convention center" ;
@@ -239,15 +230,6 @@ ns1:identifier "6TAPTnuVL0lwl5T-KDAF8w" ;
 ns1:name "Auditorium Rainier III" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/lJ68z9bBx1FF7e3y2agSDA> ns1:category "exhibition convention center" ;
-ns1:city "Menton" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "8 Avenue Boyer, 06500 Menton" ;
-ns1:identifier "lJ68z9bBx1FF7e3y2agSDA" ;
-ns1:name "Palais de l'Europe" ;
-rdf:type ns1:Place .
-
 <http://example.org/hotel/p1XJ7xDGBid15gy7nULRDA> ns1:category "exhibition convention center" ;
 ns1:city "Monaco" ;
 ns1:country "Monaco" ;
@@ -266,13 +248,22 @@ ns1:identifier "RV61LGWLqlElHIQWACwe6Q" ;
 ns1:name "Salle d'Exposition du Quai Antoine 1er" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/NobMjDMt1AQyzzP6aWiXag> ns1:category "exhibition convention center" ;
-ns1:city "Monaco" ;
-ns1:country "Monaco" ;
-ns1:countryCode "MC" ;
-ns1:freeFormAddress "Avenue Princesse Grace 10, Monaco, 98000" ;
-ns1:identifier "NobMjDMt1AQyzzP6aWiXag" ;
-ns1:name "Grimaldi Forum" ;
+<http://example.org/hotel/EB4B-EJIPJsTS6BXIx8AaQ> ns1:category "exhibition convention center" ;
+ns1:city "Théoule-sur-Mer" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "33 Boulevard de l'Estérel, 06590 Théoule-sur-Mer" ;
+ns1:identifier "EB4B-EJIPJsTS6BXIx8AaQ" ;
+ns1:name "Palais Bulles" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/rNhzhk9Suo00hcMJI2goXQ> ns1:category "exhibition convention center" ;
+ns1:city "Mandelieu-la-Napoule" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "836 Boulevard des Écureuils, 06210 Mandelieu-la-Napoule" ;
+ns1:identifier "rNhzhk9Suo00hcMJI2goXQ" ;
+ns1:name "Centre Expo Congrès" ;
 rdf:type ns1:Place .
 
 <http://example.org/hotel/YR49twLShXp3sbWGp8xx3Q> ns1:category "exhibition convention center" ;
@@ -284,6 +275,24 @@ ns1:identifier "YR49twLShXp3sbWGp8xx3Q" ;
 ns1:name "Palais des Congrès" ;
 rdf:type ns1:Place .
 
+<http://example.org/hotel/NobMjDMt1AQyzzP6aWiXag> ns1:category "exhibition convention center" ;
+ns1:city "Monaco" ;
+ns1:country "Monaco" ;
+ns1:countryCode "MC" ;
+ns1:freeFormAddress "Avenue Princesse Grace 10, Monaco, 98000" ;
+ns1:identifier "NobMjDMt1AQyzzP6aWiXag" ;
+ns1:name "Grimaldi Forum" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/-hwkOuXhmrc_Ptcw_E_xWQ> ns1:category "exhibition convention center" ;
+ns1:city "Saint-Raphaël" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "Santa Lucia, 83700 Saint-Raphaël" ;
+ns1:identifier "-hwkOuXhmrc_Ptcw_E_xWQ" ;
+ns1:name "Palais des Congrès de Saint-Raphaël" ;
+rdf:type ns1:Place .
+
 <http://example.org/hotel/164ZIh3x_srvzP3fGzaX9w> ns1:category "exhibition convention center" ;
 ns1:city "Monaco" ;
 ns1:country "Monaco" ;
@@ -293,569 +302,574 @@ ns1:identifier "164ZIh3x_srvzP3fGzaX9w" ;
 ns1:name "L'Espace Fontvieille" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/Z8xPC-1JF3eOJQjFrn525Q> ns1:category "hotel" ;
+<http://example.org/hotel/5Lt2UAHdPIqk292gwJYfpw> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "2 Rue de la Liberté, 06000 Nice" ;
-ns1:identifier "Z8xPC-1JF3eOJQjFrn525Q" ;
-ns1:name "Univers Hotel" ;
+ns1:freeFormAddress "8 Rue des Frères, 06400 Cannes" ;
+ns1:identifier "5Lt2UAHdPIqk292gwJYfpw" ;
+ns1:name "Frères Suquet Sea Cannes" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/a1CvmFc5Q-eE9-RVEA0j4w> ns1:category "hotel" ;
+<http://example.org/hotel/V05vI7UdjB6yQF-316tGXA> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "12 Boulevard Victor Hugo, 06000 Nice" ;
-ns1:identifier "a1CvmFc5Q-eE9-RVEA0j4w" ;
-ns1:name "Hôtel Boscolo Nice" ;
+ns1:freeFormAddress "6 Rue Émile Négrin, 06400 Cannes" ;
+ns1:identifier "V05vI7UdjB6yQF-316tGXA" ;
+ns1:name "Hôtel des Allées" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/5KrQRLlHMDPTShw-OEBpPQ> ns1:category "hotel" ;
+<http://example.org/hotel/cc73UrAVB7sTJwpnTX7OtA> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "26 Rue Pastorelli, 06000 Nice" ;
-ns1:identifier "5KrQRLlHMDPTShw-OEBpPQ" ;
-ns1:name "Hôtel Vendôme" ;
+ns1:freeFormAddress "21 Rue Saint-Antoine, 06400 Cannes" ;
+ns1:identifier "cc73UrAVB7sTJwpnTX7OtA" ;
+ns1:name "Cannes Le Suquet" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/B2uFruKGo00tqFUYh5KdDQ> ns1:category "hotel" ;
+<http://example.org/hotel/ZWMCNWhzTwgDQbjtegebgA> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "25 Boulevard Dubouchage, 06000 Nice" ;
-ns1:identifier "B2uFruKGo00tqFUYh5KdDQ" ;
-ns1:name "Hôtel Apollinaire Nice" ;
+ns1:freeFormAddress "1 Rue des Halles, 06400 Cannes" ;
+ns1:identifier "ZWMCNWhzTwgDQbjtegebgA" ;
+ns1:name "Alaro Les Étages" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/sDtENHG-6_Fj8VgcmxLgFA> ns1:category "hotel" ;
+<http://example.org/hotel/o425xvXuu0k9K-_ii-4YLg> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "11 Rue Emma et Philippe Tiranty, 06000 Nice" ;
-ns1:identifier "sDtENHG-6_Fj8VgcmxLgFA" ;
-ns1:name "Maison d'Hôtes Emma Tiranty" ;
+ns1:freeFormAddress "7 Rue de la Pompe, 06400 Cannes" ;
+ns1:identifier "o425xvXuu0k9K-_ii-4YLg" ;
+ns1:name "Seayousoon Inn Cannes" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/Pkk1fRk4dVOXFZyMYDA2_w> ns1:category "hotel" ;
+<http://example.org/hotel/KT75ayg_V3E3EnhVbVLoqw> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "44 Avenue du Maréchal Foch, 06000 Nice" ;
-ns1:identifier "Pkk1fRk4dVOXFZyMYDA2_w" ;
-ns1:name "Best Western Lakmi Nice" ;
+ns1:freeFormAddress "7 Rue Édith Cavell, 06400 Cannes" ;
+ns1:identifier "KT75ayg_V3E3EnhVbVLoqw" ;
+ns1:name "Hôtel Renoir" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/AAV_bipVEtFdzJie2iMizA> ns1:category "hotel" ;
+<http://example.org/hotel/jnOL2VT39wQawp0wVKPjtg> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "7 Avenue Georges Clemenceau, 06000 Nice" ;
-ns1:identifier "AAV_bipVEtFdzJie2iMizA" ;
-ns1:name "Hôtel Saint-Georges" ;
+ns1:freeFormAddress "16 Quai Saint-Pierre, 06400 Cannes" ;
+ns1:identifier "jnOL2VT39wQawp0wVKPjtg" ;
+ns1:name "Darxia-Cannes Vieux Port" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/oVHdeE5qbzAYYFmLs87zFQ> ns1:category "hotel" ;
+<http://example.org/hotel/7xSyZl3-3zyfEOxWy63unA> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "44 Avenue du Maréchal Foch, 06000 Nice" ;
-ns1:identifier "oVHdeE5qbzAYYFmLs87zFQ" ;
-ns1:name "Best Western Hôtel New York Nice" ;
+ns1:freeFormAddress "47 Avenue de Grasse, 06400 Cannes" ;
+ns1:identifier "7xSyZl3-3zyfEOxWy63unA" ;
+ns1:name "Hôtel Bellevue" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/GrTsa7h9eBBt5oHYTvNzBQ> ns1:category "hotel" ;
+<http://example.org/hotel/Z7afAOYzkXGNc5gVt1f-eg> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "44 Rue Pastorelli, 06000 Nice" ;
-ns1:identifier "GrTsa7h9eBBt5oHYTvNzBQ" ;
-ns1:name "Hôtel Nap by HappyCulture" ;
+ns1:freeFormAddress "53 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "Z7afAOYzkXGNc5gVt1f-eg" ;
+ns1:name "Ctc Event" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/AgeTdcPCwf1dpDYX2pVzhQ> ns1:category "hotel" ;
+<http://example.org/hotel/tchQ9wepoh0igK9_x019ow> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "49 Rue de l'Hôtel des Postes, 06000 Nice" ;
-ns1:identifier "AgeTdcPCwf1dpDYX2pVzhQ" ;
-ns1:name "Hôtel de Verdun" ;
+ns1:freeFormAddress "12 Rue Forville, 06400 Cannes" ;
+ns1:identifier "tchQ9wepoh0igK9_x019ow" ;
+ns1:name "Chanteclair" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/lJS1gMOH1g6fbW2oem9efA> ns1:category "hotel" ;
+<http://example.org/hotel/AgBLwABQpRucUMuW2uxSug> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "47 Rue de l'Hôtel des Postes, 06000 Nice" ;
-ns1:identifier "lJS1gMOH1g6fbW2oem9efA" ;
-ns1:name "Hôtel Helvétique" ;
+ns1:freeFormAddress "7 Rue Georges Clemenceau, 06400 Cannes" ;
+ns1:identifier "AgBLwABQpRucUMuW2uxSug" ;
+ns1:name "Résidence Yolande" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/1N5BHaBNmWwJc_UaR2fSmQ> ns1:category "hotel" ;
+<http://example.org/hotel/hUi04TWbcmkNPUA7sMIdbw> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "11 Rue Paul Déroulède, 06000 Nice" ;
-ns1:identifier "1N5BHaBNmWwJc_UaR2fSmQ" ;
-ns1:name "Hôtel Athena" ;
+ns1:freeFormAddress "4 Quai Saint-Pierre, 06400 Cannes" ;
+ns1:identifier "hUi04TWbcmkNPUA7sMIdbw" ;
+ns1:name "Residences Cresci" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/eo5dSDxovFeczGBJJhxpZA> ns1:category "hotel" ;
+<http://example.org/hotel/JJqnG8Oe6HSBhO3RscS50A> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "45-47 Rue Pastorelli, 06000 Nice" ;
-ns1:identifier "eo5dSDxovFeczGBJJhxpZA" ;
-ns1:name "Hôtel Nice Riviera" ;
+ns1:freeFormAddress "14 Rue Édith Cavell, 06400 Cannes" ;
+ns1:identifier "JJqnG8Oe6HSBhO3RscS50A" ;
+ns1:name "Staybridge Suites Cannes Centre" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/RGY9broAkBebRssBS6fR-A> ns1:category "hotel" ;
+<http://example.org/hotel/tzePA7h6wGhMPiw4Tn2LrA> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "33 Rue Pastorelli, 06000 Nice" ;
-ns1:identifier "RGY9broAkBebRssBS6fR-A" ;
-ns1:name "Hôtel H 33" ;
+ns1:freeFormAddress "6 Rue Émile Négrin, 06400 Cannes" ;
+ns1:identifier "tzePA7h6wGhMPiw4Tn2LrA" ;
+ns1:name "Avaton Hôtel" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/PbZkZSUYOM-__ZGeMH7ing> ns1:category "hotel" ;
+<http://example.org/hotel/Mu04hxvA6Sfg5zyZzIKO7Q> ns1:category "hotel" ;
 ns1:category "hotel/motel" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "32 Rue de l'Hôtel des Postes, 06000 Nice" ;
-ns1:identifier "PbZkZSUYOM-__ZGeMH7ing" ;
-ns1:name "Aparthotel Ammi Nice Lafayette" ;
+ns1:freeFormAddress "4 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "Mu04hxvA6Sfg5zyZzIKO7Q" ;
+ns1:name "Hôtel Splendid Cannes" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/nBRgBYgQMFju-5xX1kGyeg> ns1:category "theater" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/8PB9cFWK0n1P2iVRFYEGpg> ns1:category "theater" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "19 Rue Delille, 06000 Nice" ;
-ns1:identifier "nBRgBYgQMFju-5xX1kGyeg" ;
-ns1:name "Théâtre de L'Alphabet" ;
+ns1:freeFormAddress "19 Boulevard Alexandre III, 06400 Cannes" ;
+ns1:identifier "8PB9cFWK0n1P2iVRFYEGpg" ;
+ns1:name "Théâtre Alexandre III" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/U9uYCW1RH9Viy1Qw32LFNw> ns1:category "theater" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "8 Rue de l'Abbaye, 06300 Nice" ;
-ns1:identifier "U9uYCW1RH9Viy1Qw32LFNw" ;
-ns1:name "Théâtre Ségurane" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/zQAv2qBRD8_pMotzEbPfUg> ns1:category "theater" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "10 Rue Delille, 06000 Nice" ;
-ns1:identifier "zQAv2qBRD8_pMotzEbPfUg" ;
-ns1:name "Le P'tit Théâtre de l'Inattendu" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/5Soblg0a9BNoPh_eXKFMiQ> ns1:category "theater" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "17 Rue d'Alsace-Lorraine, 06000 Nice" ;
-ns1:identifier "5Soblg0a9BNoPh_eXKFMiQ" ;
-ns1:name "Théâtre Trimages" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/TzqTa1Xk7QWinS7gH-_9Lw> ns1:category "theater" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "6 Rue de l'Abbaye, 06300 Nice" ;
-ns1:identifier "TzqTa1Xk7QWinS7gH-_9Lw" ;
-ns1:name "Théâtre des oiseaux" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/wYgqQ_lidZuHPtKvx4ZCgA> ns1:category "theater" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "Rue Saint-François de Paule, 06300 Nice" ;
-ns1:identifier "wYgqQ_lidZuHPtKvx4ZCgA" ;
-ns1:name "" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/P6nNMwBFAtbwMUJfLsBUhw> ns1:category "theater" ;
-ns1:category "cabaret" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "1-3 Rue Gabriel Fauré, 06000 Nice" ;
-ns1:identifier "P6nNMwBFAtbwMUJfLsBUhw" ;
-ns1:name "Le Boa" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/Y8V2cNT3oE7CyUH6-zs_yg> ns1:category "theater" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "33 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "Y8V2cNT3oE7CyUH6-zs_yg" ;
-ns1:name "CIRM-Centre National de Création Musicale" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/gfBm3zPsZPLOtiBWgwgd8g> ns1:category "theater" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "21 Rue d'Alsace-Lorraine, 06000 Nice" ;
-ns1:identifier "gfBm3zPsZPLOtiBWgwgd8g" ;
-ns1:name "Théâtre Athéna" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/65uIN52r5ldGbHzAgYTd-A> ns1:category "theater" ;
+<http://example.org/hotel/EHvDipvKqVak_CpDXURaZg> ns1:category "theater" ;
 ns1:category "concert hall" ;
-ns1:city "Nice" ;
+ns1:city "Le Cannet" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "24 Avenue du Maréchal Foch, 06000 Nice" ;
-ns1:identifier "65uIN52r5ldGbHzAgYTd-A" ;
-ns1:name "B Spot" ;
+ns1:freeFormAddress "730 Avenue Georges Pompidou, 06110 Le Cannet" ;
+ns1:identifier "EHvDipvKqVak_CpDXURaZg" ;
+ns1:name "La Palestre" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/krNY3yqKt65HcwBzKPPw-Q> ns1:category "theater" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/MmKscb4_8iRhK17sA4O0Bg> ns1:category "theater" ;
+ns1:category "concert hall" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "8-10 Rue du Commandant Raffali, 06000 Nice" ;
-ns1:identifier "krNY3yqKt65HcwBzKPPw-Q" ;
-ns1:name "Jam Bar à Scènes" ;
+ns1:freeFormAddress "58 Boulevard de la Croisette, 06400 Cannes" ;
+ns1:identifier "MmKscb4_8iRhK17sA4O0Bg" ;
+ns1:name "The London Cabaret Club" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/AeYMIbWhDKGRgjZouFp5bg> ns1:category "theater" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/4FcIeWN0FdbUXcgA25TRVw> ns1:category "theater" ;
+ns1:city "Mougins" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "20 Rue Paganini, 06000 Nice" ;
-ns1:identifier "AeYMIbWhDKGRgjZouFp5bg" ;
-ns1:name "Théâtre de l'Hôtel du Scribe" ;
+ns1:freeFormAddress "55 Chemin de Faissole, 06250 Mougins" ;
+ns1:identifier "4FcIeWN0FdbUXcgA25TRVw" ;
+ns1:name "Scène 55" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/7MOcaCBDADHIV3MWXFqZ1Q> ns1:category "theater" ;
-ns1:category "opera" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/TrWJ80IIpuiDyekTf8RIYQ> ns1:category "theater" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "6 Rue Saint-François de Paule, 06300 Nice" ;
-ns1:identifier "7MOcaCBDADHIV3MWXFqZ1Q" ;
-ns1:name "Opéra de Nice" ;
+ns1:freeFormAddress "5 Rue de Mimont, 06400 Cannes" ;
+ns1:identifier "TrWJ80IIpuiDyekTf8RIYQ" ;
+ns1:name "Espace Mimont" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/IBhOXzDymI4DbitMfUJ8qQ> ns1:category "theater" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/ou64oJo2xkZwl0ZlXjeX1g> ns1:category "theater" ;
+ns1:category "concert hall" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "3 Rue Paganini, 06000 Nice" ;
-ns1:identifier "IBhOXzDymI4DbitMfUJ8qQ" ;
-ns1:name "Théâtre de La Cité" ;
+ns1:freeFormAddress "23 Avenue du Docteur Raymond Picaud, 06400 Cannes" ;
+ns1:identifier "ou64oJo2xkZwl0ZlXjeX1g" ;
+ns1:name "Maison des Jeunes et de la Culture" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/bGe_7jTifCsaQWQRoxjS7w> ns1:category "café/pub" ;
-ns1:category "tea house" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/TAmUvrpacLVXIRV7lE76mw> ns1:category "theater" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "29 Rue Tonduti de l'Escarène, 06000 Nice" ;
-ns1:identifier "bGe_7jTifCsaQWQRoxjS7w" ;
-ns1:name "Coffee Time" ;
+ns1:freeFormAddress "50 Boulevard de la Croisette, 06400 Cannes" ;
+ns1:identifier "TAmUvrpacLVXIRV7lE76mw" ;
+ns1:name "Théâtre Croisette" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/QdYkgkxYs2Dt9HNgMucKaQ> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/dGte8ka2ICKz9gCH6LGAfA> ns1:category "theater" ;
+ns1:category "concert hall" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "8 Rue du Maréchal Joffre, 06000 Nice" ;
-ns1:identifier "QdYkgkxYs2Dt9HNgMucKaQ" ;
-ns1:name "Yolo" ;
+ns1:freeFormAddress "13 Rue Forville, 06400 Cannes" ;
+ns1:identifier "dGte8ka2ICKz9gCH6LGAfA" ;
+ns1:name "Vesper Bar" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/eUOf42VzhH5ijAeGviuf9A> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/J31oRlCn2L8ELPcxTmGOFg> ns1:category "theater" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "6 Rue de Lépante, 06000 Nice" ;
-ns1:identifier "eUOf42VzhH5ijAeGviuf9A" ;
-ns1:name "Le Palenke" ;
+ns1:freeFormAddress "Chemin Rural de la Frayère, 06150 Cannes" ;
+ns1:identifier "J31oRlCn2L8ELPcxTmGOFg" ;
+ns1:name "Maison des Jeunes et de la Culture de Ranguin" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/v0Kz8Wuuo8DkAytlHgDATw> ns1:category "café/pub" ;
+<http://example.org/hotel/atFEZDl01tWBdzwm7gNAXQ> ns1:category "theater" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "1 Boulevard de la Croisette, 06400 Cannes" ;
+ns1:identifier "atFEZDl01tWBdzwm7gNAXQ" ;
+ns1:name "Palais des Festivals et des Congrès" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/rxhmI_eut328EWNq1oDgCA> ns1:category "theater" ;
+ns1:category "concert hall" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "Esplanade Georges Pompidou, 06400 Cannes" ;
+ns1:identifier "rxhmI_eut328EWNq1oDgCA" ;
+ns1:name "Grand Auditorium Louis Lumière" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/IIs_EEzlZZLB7O71QU-Fbw> ns1:category "theater" ;
+ns1:category "concert hall" ;
+ns1:city "Le Cannet" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "35 Avenue Franklin Roosevelt, 06110 Le Cannet" ;
+ns1:identifier "IIs_EEzlZZLB7O71QU-Fbw" ;
+ns1:name "Dancing Les Sérénades" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/CSrz28cPucV9wTHg7OrxKw> ns1:category "theater" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "35 Rue Pasteur, 06400 Cannes" ;
+ns1:identifier "CSrz28cPucV9wTHg7OrxKw" ;
+ns1:name "Espace Miramar" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/6CC7BuX81uPRowrpCDr-ew> ns1:category "theater" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "25 Avenue Francis Tonner, 06150 Cannes" ;
+ns1:identifier "6CC7BuX81uPRowrpCDr-ew" ;
+ns1:name "Théâtre La Licorne" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/TGK4rgQz2ym9Jg6oCnSLZA> ns1:category "theater" ;
+ns1:category "music center" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "3 Boulevard de la Croisette, 06400 Cannes" ;
+ns1:identifier "TGK4rgQz2ym9Jg6oCnSLZA" ;
+ns1:name "Villa Schweppes" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/J9SvVcn03KaLNwnZXtk1nA> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "13 Rue Forville, 06400 Cannes" ;
+ns1:identifier "J9SvVcn03KaLNwnZXtk1nA" ;
+ns1:name "Vesper" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/ywqWWWsAeSY2lxbPsf083Q> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "3 Rue des Halles, 06400 Cannes" ;
+ns1:identifier "ywqWWWsAeSY2lxbPsf083Q" ;
+ns1:name "La Terrasse" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/ynbvu66iR86ez0iYg5L50w> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "1 Rue du Bivouac Napoléon, 06400 Cannes" ;
+ns1:identifier "ynbvu66iR86ez0iYg5L50w" ;
+ns1:name "Daddy's" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/nsZxXHtKTh8asNA4VHDyvw> ns1:category "café/pub" ;
 ns1:category "café" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "6 Rue Eugène Emanuel, 06000 Nice" ;
-ns1:identifier "v0Kz8Wuuo8DkAytlHgDATw" ;
-ns1:name "Le Flag" ;
+ns1:freeFormAddress "10 Rue Saint-Antoine, 06400 Cannes" ;
+ns1:identifier "nsZxXHtKTh8asNA4VHDyvw" ;
+ns1:name "Cotton Club" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/g6ejkzRj1zFeqKHVIkqaMA> ns1:category "café/pub" ;
-ns1:category "tea house" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/C2zU0Uf0efvXjMv1Oy_1dw> ns1:category "café/pub" ;
+ns1:category "microbrewery/beer garden" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "7 Rue Alberti, 06000 Nice" ;
-ns1:identifier "g6ejkzRj1zFeqKHVIkqaMA" ;
-ns1:name "Haricot Magique" ;
+ns1:freeFormAddress "5 Square Mérimée, 06400 Cannes" ;
+ns1:identifier "C2zU0Uf0efvXjMv1Oy_1dw" ;
+ns1:name "Brasserie Du Casino" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/YDv6bDYWxU87TutSnOtstQ> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/dpS_NCjRGOiZn417ulHEng> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "39 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "YDv6bDYWxU87TutSnOtstQ" ;
-ns1:name "Ipanema" ;
+ns1:freeFormAddress "7 Rue Rouguière, 06400 Cannes" ;
+ns1:identifier "dpS_NCjRGOiZn417ulHEng" ;
+ns1:name "Disco 7" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/diI54QnwG0B9kr4txK9Wmg> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/O83OpzHW-pugNXyJdFMiMA> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "17 Avenue Notre-Dame, 06000 Nice" ;
-ns1:identifier "diI54QnwG0B9kr4txK9Wmg" ;
-ns1:name "Le Meziard" ;
+ns1:freeFormAddress "5 Rue du Maréchal Joffre, 06400 Cannes" ;
+ns1:identifier "O83OpzHW-pugNXyJdFMiMA" ;
+ns1:name "Le Meynadier" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/1E-sjp9AaCaIEf2wpQ9QpA> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/PWwItx6yXKzhSRyV5K9u1Q> ns1:category "café/pub" ;
+ns1:category "café" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "16 Rue Gubernatis, 06000 Nice" ;
-ns1:identifier "1E-sjp9AaCaIEf2wpQ9QpA" ;
-ns1:name "Le 1900" ;
+ns1:freeFormAddress "1 Rue Rouguière, 06400 Cannes" ;
+ns1:identifier "PWwItx6yXKzhSRyV5K9u1Q" ;
+ns1:name "Le Divan" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/7AfSuI-XSAGPjE0xrUDBcw> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/bRVJzLiX4Yn6UnI42jafMA> ns1:category "café/pub" ;
+ns1:category "café" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "18 B Rue Biscarra, 06000 Nice" ;
-ns1:identifier "7AfSuI-XSAGPjE0xrUDBcw" ;
-ns1:name "Le Cenac" ;
+ns1:freeFormAddress "2 Rue des Frères, 06400 Cannes" ;
+ns1:identifier "bRVJzLiX4Yn6UnI42jafMA" ;
+ns1:name "Le Sug'art" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/nXdgro0sSyejDD8B6KCSww> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/_eDhgUk51VwLIRLeRSwvhg> ns1:category "café/pub" ;
+ns1:category "café" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "12 Rue de Lépante, 06000 Nice" ;
-ns1:identifier "nXdgro0sSyejDD8B6KCSww" ;
-ns1:name "Civette Lepante" ;
+ns1:freeFormAddress "81 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "_eDhgUk51VwLIRLeRSwvhg" ;
+ns1:name "Ingrassia Cafe Sud" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/fhQdv8v2N5FKE3kjrqGgtA> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/ZxESfyFy1uJt_ALy1E1KlQ> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "12 Rue Chauvain, 06000 Nice" ;
-ns1:identifier "fhQdv8v2N5FKE3kjrqGgtA" ;
-ns1:name "Knt" ;
+ns1:freeFormAddress "20 Rue Georges Clemenceau, 06400 Cannes" ;
+ns1:identifier "ZxESfyFy1uJt_ALy1E1KlQ" ;
+ns1:name "La Matelotte" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/ragZtBgywSkSWruQ3g4rjg> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/M46IZY9AV-zrZXREfcUxug> ns1:category "café/pub" ;
+ns1:category "café" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "9 Passage Émile Négrin, 06000 Nice" ;
-ns1:identifier "ragZtBgywSkSWruQ3g4rjg" ;
-ns1:name "L'almodo" ;
+ns1:freeFormAddress "12 Rue Louis Blanc, 06400 Cannes" ;
+ns1:identifier "M46IZY9AV-zrZXREfcUxug" ;
+ns1:name "L'instant Coffee" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/WPOAjT-vk9gwX6L_kVegtg> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/dz8cBnEE4SMbamrmAKEXGQ> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "49 Rue de l'Hôtel des Postes, 06000 Nice" ;
-ns1:identifier "WPOAjT-vk9gwX6L_kVegtg" ;
-ns1:name "Le Loft" ;
+ns1:freeFormAddress "2 Place du Général de Gaulle, 06400 Cannes" ;
+ns1:identifier "dz8cBnEE4SMbamrmAKEXGQ" ;
+ns1:name "Steak N Shake" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/4iAlyhQKFKc-vfNAwTYQ1Q> ns1:category "café/pub" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/lbEPKSyDnENy0A0-4vKnPw> ns1:category "café/pub" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "8 Passage Émile Négrin, 06000 Nice" ;
-ns1:identifier "4iAlyhQKFKc-vfNAwTYQ1Q" ;
-ns1:name "L'omega Club" ;
+ns1:freeFormAddress "18 Rue du Suquet, 06400 Cannes" ;
+ns1:identifier "lbEPKSyDnENy0A0-4vKnPw" ;
+ns1:name "La Spiaggia" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/3xWToDW8UAZuPd0dXbpc5A> ns1:category "café/pub" ;
-ns1:category "tea house" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/go-j_ZeH8urL6hxlUFguZQ> ns1:category "café/pub" ;
+ns1:category "café" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Rue Sacha Guitry, 06000 Nice" ;
-ns1:identifier "3xWToDW8UAZuPd0dXbpc5A" ;
-ns1:name "La Table" ;
+ns1:freeFormAddress "20 Rue du Suquet, 06400 Cannes" ;
+ns1:identifier "go-j_ZeH8urL6hxlUFguZQ" ;
+ns1:name "Le Vogue" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/KNjg3BU5uGEQ63RgGSkpqA> ns1:category "restaurant" ;
-ns1:category "yogurt/juice bar" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/bPlWb3PQpKAGpOGYcfEf6w> ns1:category "restaurant" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "30 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "KNjg3BU5uGEQ63RgGSkpqA" ;
-ns1:name "Zumo" ;
+ns1:freeFormAddress "Rue Meynadier, 06400 Cannes" ;
+ns1:identifier "bPlWb3PQpKAGpOGYcfEf6w" ;
+ns1:name "Fontaine de Gaïa" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/KwuzDZ-49aLyIyEyBxJNng> ns1:category "restaurant" ;
+<http://example.org/hotel/bOgre-xI1nNuFURuM9zJnQ> ns1:category "restaurant" ;
+ns1:category "french" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "29 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "bOgre-xI1nNuFURuM9zJnQ" ;
+ns1:name "L'Atelier Artisan Crepier Cannes" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/hXWBBed4TRdm124Nb3m_uw> ns1:category "restaurant" ;
+ns1:category "french" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "Promenade de la Pantiero, 06400 Cannes" ;
+ns1:identifier "hXWBBed4TRdm124Nb3m_uw" ;
+ns1:name "Philcat" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/vdq0TsvaBBk8soDTMsHDzA> ns1:category "restaurant" ;
+ns1:category "french" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "66 B Rue Meynadier, 06400 Cannes" ;
+ns1:identifier "vdq0TsvaBBk8soDTMsHDzA" ;
+ns1:name "Bistrot de l'Écailler" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/6ko0nyDzYCocUiRDJFD_EQ> ns1:category "restaurant" ;
+ns1:category "soup" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "64 Rue Meynadier, 06400 Cannes" ;
+ns1:identifier "6ko0nyDzYCocUiRDJFD_EQ" ;
+ns1:name "Le Troquet à Soupe" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/zKVvBp1wvAVcbhgj4x8F9A> ns1:category "restaurant" ;
+ns1:city "Cannes" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "27 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "zKVvBp1wvAVcbhgj4x8F9A" ;
+ns1:name "Astoux et Brun" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/YLjMymXlFAHjXuEA71cNaQ> ns1:category "restaurant" ;
 ns1:category "fast food" ;
-ns1:city "Nice" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "20 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "KwuzDZ-49aLyIyEyBxJNng" ;
-ns1:name "McDonald's Nice Masséna" ;
+ns1:freeFormAddress "21 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "YLjMymXlFAHjXuEA71cNaQ" ;
+ns1:name "Snack Le Croq'in" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/HGqexfNCJKIsI7GT1rTx4w> ns1:category "restaurant" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/cxt1quXIiAzMHinKcVGIMQ> ns1:category "restaurant" ;
+ns1:category "seafood" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "30 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "HGqexfNCJKIsI7GT1rTx4w" ;
-ns1:name "Kusmi Tea Nice" ;
+ns1:freeFormAddress "35 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "cxt1quXIiAzMHinKcVGIMQ" ;
+ns1:name "Le Rendez-Vous" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/s2o7IxmpFaBb5UuFoxRORA> ns1:category "restaurant" ;
-ns1:category "french" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/AU4yLETKOpCsgVDCPyaI8g> ns1:category "restaurant" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "2 Passage Victor Hugo, 06000 Nice" ;
-ns1:identifier "s2o7IxmpFaBb5UuFoxRORA" ;
-ns1:name "Why Nice" ;
+ns1:freeFormAddress "Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "AU4yLETKOpCsgVDCPyaI8g" ;
+ns1:name "Catherine" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/YFHPNvGesMX2pkP_6nifLw> ns1:category "restaurant" ;
-ns1:category "french" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/oU3vpuyG6Yn09nZ1nkmAZw> ns1:category "restaurant" ;
+ns1:category "crêperie" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "24 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "YFHPNvGesMX2pkP_6nifLw" ;
-ns1:name "Urban Café" ;
+ns1:freeFormAddress "62 Rue Meynadier, 06400 Cannes" ;
+ns1:identifier "oU3vpuyG6Yn09nZ1nkmAZw" ;
+ns1:name "Crêperie La Bigoudène" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/RQnZhnRpHozofOrcBpvZ3A> ns1:category "restaurant" ;
-ns1:category "bistro" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/0PYfUgR8hnnnsmLp9PAObQ> ns1:category "restaurant" ;
+ns1:category "seafood" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "24 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "RQnZhnRpHozofOrcBpvZ3A" ;
-ns1:name "Brasserie des Arts" ;
+ns1:freeFormAddress "41 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "0PYfUgR8hnnnsmLp9PAObQ" ;
+ns1:name "La Perle Restaurant" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/tFNoRg8u5NjXSZ3p9PboZg> ns1:category "restaurant" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/5oXHunbREZY5FMCnrx_Mgg> ns1:category "restaurant" ;
+ns1:category "seafood" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "8 Rue Spitalieri, 06000 Nice" ;
-ns1:identifier "tFNoRg8u5NjXSZ3p9PboZg" ;
-ns1:name "JM et MF" ;
+ns1:freeFormAddress "4 Rue Émile Négrin, 06400 Cannes" ;
+ns1:identifier "5oXHunbREZY5FMCnrx_Mgg" ;
+ns1:name "Au Martin Pêcheur" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/m5gb2au5vXjgo7mPHNO9NQ> ns1:category "restaurant" ;
-ns1:category "french" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/bV4jsvUTVl1tc-USc1zpGQ> ns1:category "restaurant" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "30 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "m5gb2au5vXjgo7mPHNO9NQ" ;
-ns1:name "Causette et Bergamote" ;
+ns1:freeFormAddress "21 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "bV4jsvUTVl1tc-USc1zpGQ" ;
+ns1:name "Choumi" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/C73TAa9OiD8yO88UX6JESg> ns1:category "restaurant" ;
-ns1:category "fast food" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/rCiUMwTMpGhBcDrdlopuQA> ns1:category "restaurant" ;
+ns1:category "crêperie" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "30 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "C73TAa9OiD8yO88UX6JESg" ;
-ns1:name "La Piadineria Nice Étoile" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/s9GEFefmAi0eRlcoOjhd2w> ns1:category "restaurant" ;
-ns1:category "french" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "30 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "s9GEFefmAi0eRlcoOjhd2w" ;
-ns1:name "Le Carrousel" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/lkdW-7VcMugcw8vrKNGWIA> ns1:category "restaurant" ;
-ns1:category "international" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "11 Rue Gustave Deloye, 06000 Nice" ;
-ns1:identifier "lkdW-7VcMugcw8vrKNGWIA" ;
-ns1:name "L'Indyana" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/cOQSmozbMLw7SXYCRp9JWg> ns1:category "restaurant" ;
-ns1:category "sandwich" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "22 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "cOQSmozbMLw7SXYCRp9JWg" ;
-ns1:name "Brioche Dorée" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/NQp2am5WK0M1FY4qAW6Nzg> ns1:category "restaurant" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "11 Rue Gustave Deloye, 06000 Nice" ;
-ns1:identifier "NQp2am5WK0M1FY4qAW6Nzg" ;
-ns1:name "Cafe Gustave" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/reE05ac_WFo5gLZMpsRaPw> ns1:category "restaurant" ;
-ns1:category "roadside" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "11 Rue Gustave Deloye, 06000 Nice" ;
-ns1:identifier "reE05ac_WFo5gLZMpsRaPw" ;
-ns1:name "Gusto Slice" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/Ppne0iJIJ9lh_6phoP66sg> ns1:category "restaurant" ;
-ns1:category "yogurt/juice bar" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "30 Avenue Jean Médecin, 06000 Nice" ;
-ns1:identifier "Ppne0iJIJ9lh_6phoP66sg" ;
-ns1:name "Yogurt Factory" ;
+ns1:freeFormAddress "29 Rue Félix Faure, 06400 Cannes" ;
+ns1:identifier "rCiUMwTMpGhBcDrdlopuQA" ;
+ns1:name "Brasserie Le 29" ;
 rdf:type ns1:Place .
 
 <http://example.org/hotel/q8P8XcUM0htQ9RWdul8Amw> ns1:category "stadium" ;
@@ -925,16 +939,6 @@ ns1:identifier "o_FUGnzra54sHZp29gGMkg" ;
 ns1:name "Parc des Sports Charles Ehrmann" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/6oXPUeHtTyJJ7uiJCvVqzg> ns1:category "stadium" ;
-ns1:category "soccer" ;
-ns1:city "Monaco" ;
-ns1:country "Monaco" ;
-ns1:countryCode "MC" ;
-ns1:freeFormAddress "Avenue Des Castelans 7, Monaco, 98000" ;
-ns1:identifier "6oXPUeHtTyJJ7uiJCvVqzg" ;
-ns1:name "Stade Louis II" ;
-rdf:type ns1:Place .
-
 <http://example.org/hotel/B--NbDj9iECD0D-nTgieOQ> ns1:category "stadium" ;
 ns1:category "basketball" ;
 ns1:city "Antibes" ;
@@ -945,14 +949,23 @@ ns1:identifier "B--NbDj9iECD0D-nTgieOQ" ;
 ns1:name "Azurarena Antibes" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/TeowaeB2f_9ui4Bv-4I54A> ns1:category "stadium" ;
+<http://example.org/hotel/6oXPUeHtTyJJ7uiJCvVqzg> ns1:category "stadium" ;
 ns1:category "soccer" ;
-ns1:city "Sanremo" ;
-ns1:country "Italia" ;
-ns1:countryCode "IT" ;
-ns1:freeFormAddress "Via delle Ginestre 15, 18038 Sanremo" ;
-ns1:identifier "TeowaeB2f_9ui4Bv-4I54A" ;
-ns1:name "Stadio Comunale" ;
+ns1:city "Monaco" ;
+ns1:country "Monaco" ;
+ns1:countryCode "MC" ;
+ns1:freeFormAddress "Avenue Des Castelans 7, Monaco, 98000" ;
+ns1:identifier "6oXPUeHtTyJJ7uiJCvVqzg" ;
+ns1:name "Stade Louis II" ;
+rdf:type ns1:Place .
+
+<http://example.org/hotel/Va2ud9Kxr6qN01Ua9f3yQA> ns1:category "stadium" ;
+ns1:city "Saint-Raphaël" ;
+ns1:country "France" ;
+ns1:countryCode "FR" ;
+ns1:freeFormAddress "Place Sadi Carnot, 83700 Saint-Raphaël" ;
+ns1:identifier "Va2ud9Kxr6qN01Ua9f3yQA" ;
+ns1:name "Commune de Saint-Raphaël" ;
 rdf:type ns1:Place .
 
 <http://example.org/hotel/q2KYyPFc4-Hxbal602WvMw> ns1:category "stadium" ;
@@ -1002,137 +1015,128 @@ ns1:identifier "DclKE2VZJXwv8x2xULaabQ" ;
 ns1:name "CTIM La Foux Hauts de Vaugrenier" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/Bu1yq8Mllx_Mpw650-YoNA> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/GlKQR1O-PHjsCeKnSNy4Dw> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "77 Quai des États-Unis, 06300 Nice" ;
-ns1:identifier "Bu1yq8Mllx_Mpw650-YoNA" ;
-ns1:name "Galerie des Ponchettes" ;
+ns1:freeFormAddress "3 Rue du Commandant Vidal, 06400 Cannes" ;
+ns1:identifier "GlKQR1O-PHjsCeKnSNy4Dw" ;
+ns1:name "Galerie Néel" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/we5iN-TkSnFb8VIqSbDMQg> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/Xx35meHhisQ-mobV9cmB7g> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "89 Rue Gabriel Fauré, 06000 Nice" ;
-ns1:identifier "we5iN-TkSnFb8VIqSbDMQg" ;
-ns1:name "Forum de l'Urbanisme et d'Architecture" ;
+ns1:freeFormAddress "10 Rue Notre-Dame, 06400 Cannes" ;
+ns1:identifier "Xx35meHhisQ-mobV9cmB7g" ;
+ns1:name "Francl Gallery" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/mreHmZmSVkyLNYQRxl__cA> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/cj3lCBAoEt8AqVzXKFhAcw> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Boulevard Dubouchage, 06000 Nice" ;
-ns1:identifier "mreHmZmSVkyLNYQRxl__cA" ;
-ns1:name "L'Artistique Centre d'Arts et de Culture Espace Ferrero" ;
+ns1:freeFormAddress "Rue Louis Perrissol, 06400 Cannes" ;
+ns1:identifier "cj3lCBAoEt8AqVzXKFhAcw" ;
+ns1:name "Musée des Explorations du Monde" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/4BWMXdLT6Xzf-vvQ-5ra3w> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/OBCk7q0c9IZQWROluxotOg> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "1 Place Pierre Gautier, 06300 Nice" ;
-ns1:identifier "4BWMXdLT6Xzf-vvQ-5ra3w" ;
-ns1:name "Musée de la Photographie Charles Nègre" ;
+ns1:freeFormAddress "Rue du Suquet, 06400 Cannes" ;
+ns1:identifier "OBCk7q0c9IZQWROluxotOg" ;
+ns1:name "Musée de la Castre" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/d76m4j5tL5Vc5I4CVSo_Fw> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/FiCdjLfIWRinkMdUA3mE5A> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "15 Rue de la Boucherie, 06300 Nice" ;
-ns1:identifier "d76m4j5tL5Vc5I4CVSo_Fw" ;
-ns1:name "Eyemazy-Nice" ;
+ns1:freeFormAddress "111 Rue d'Antibes, 06400 Cannes" ;
+ns1:identifier "FiCdjLfIWRinkMdUA3mE5A" ;
+ns1:name "Galerie de Cannes" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/Ds74thgbqKXtoOpgEWRSFg> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/gg3PHcxTvErK7OeKIGawzQ> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Promenade des Anglais, 06000 Nice" ;
-ns1:identifier "Ds74thgbqKXtoOpgEWRSFg" ;
-ns1:name "Musée National de la Marine de Nice" ;
+ns1:freeFormAddress "2 Rue Meynadier, 06400 Cannes" ;
+ns1:identifier "gg3PHcxTvErK7OeKIGawzQ" ;
+ns1:name "Aquarella" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/ZRtbAKFXW0dfQji59whjyA> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/WM8K-uxHyh3OjRFlRMcC1Q> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "10 Rue Assalit, 06000 Nice" ;
-ns1:identifier "ZRtbAKFXW0dfQji59whjyA" ;
-ns1:name "Galerie Espace A Vendre" ;
+ns1:freeFormAddress "10 B Rue du Commandant Vidal, 06400 Cannes" ;
+ns1:identifier "WM8K-uxHyh3OjRFlRMcC1Q" ;
+ns1:name "Galerie Dansleciel Art Contemporain" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/f4fvjzgvGhzvK6ih-FTPMQ> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/1kDx2StO3-ClIHe2hu81LA> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "17 Rue Droite, 06300 Nice" ;
-ns1:identifier "f4fvjzgvGhzvK6ih-FTPMQ" ;
-ns1:name "Gravis Art Galerie" ;
+ns1:freeFormAddress "67 B Avenue de Vallauris, 06400 Cannes" ;
+ns1:identifier "1kDx2StO3-ClIHe2hu81LA" ;
+ns1:name "Chapelle Bellini" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/gRgZDvmTkz5BJhmw6SEWAQ> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/BEo2_RlSKovLv2qDdhok0Q> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Traverse Garibaldi, 06000 Nice" ;
-ns1:identifier "gRgZDvmTkz5BJhmw6SEWAQ" ;
-ns1:name "Musée d'Art Moderne et d'Art Contemporain" ;
+ns1:freeFormAddress "14 Avenue de Grasse, 06400 Cannes" ;
+ns1:identifier "BEo2_RlSKovLv2qDdhok0Q" ;
+ns1:name "La Banane" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/fwI4ZZJeFLvgx9AQyj2rcg> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/6ZZ4RXhx9_o6s_n9L-Ex-w> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "14 Avenue Saint-Jean-Baptiste, 06000 Nice" ;
-ns1:identifier "fwI4ZZJeFLvgx9AQyj2rcg" ;
-ns1:name "Galerie Jacqueline Perrin" ;
+ns1:freeFormAddress "Boulevard de la Croisette, 06400 Cannes" ;
+ns1:identifier "6ZZ4RXhx9_o6s_n9L-Ex-w" ;
+ns1:name "Galeries Bartoux" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/FZYf--Fr1G2M-_aJ81sxbA> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/_v9inF4URe45ztOiRTjbpA> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "26 Rue de France, 06000 Nice" ;
-ns1:identifier "FZYf--Fr1G2M-_aJ81sxbA" ;
-ns1:name "Gallery 26" ;
+ns1:freeFormAddress "47 Boulevard de la Croisette, 06400 Cannes" ;
+ns1:identifier "_v9inF4URe45ztOiRTjbpA" ;
+ns1:name "Centre d'art La Malmaison" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/hINebypouS7hnie3o4C8kQ> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/ZKV2AqjrQdwwTW99dg3sqg> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "Rue Louis Gassin, 06300 Nice" ;
-ns1:identifier "hINebypouS7hnie3o4C8kQ" ;
-ns1:name "Galerie Motus" ;
+ns1:freeFormAddress "2 Rue Venizélos, 06400 Cannes" ;
+ns1:identifier "ZKV2AqjrQdwwTW99dg3sqg" ;
+ns1:name "Musée de L'Enfance" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/RHj5Dm-YRix-vsWj0729kQ> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/XCeMC_FDSk9SRqE_ATmv-Q> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "75 Quai des États-Unis, 06300 Nice" ;
-ns1:identifier "RHj5Dm-YRix-vsWj0729kQ" ;
-ns1:name "Mission Promenade des Anglais" ;
+ns1:freeFormAddress "17 Boulevard de la Croisette, 06400 Cannes" ;
+ns1:identifier "XCeMC_FDSk9SRqE_ATmv-Q" ;
+ns1:name "Galerie Hurtebize" ;
 rdf:type ns1:Place .
 
-<http://example.org/hotel/w-Y2Se6X7o0kEs62k2xVCA> ns1:category "museum" ;
-ns1:city "Nice" ;
+<http://example.org/hotel/SlAen7slrDhfeyhRth6wKQ> ns1:category "museum" ;
+ns1:city "Cannes" ;
 ns1:country "France" ;
 ns1:countryCode "FR" ;
-ns1:freeFormAddress "15 Rue Benoît Bunico, 06300 Nice" ;
-ns1:identifier "w-Y2Se6X7o0kEs62k2xVCA" ;
-ns1:name "Palais Lascaris" ;
-rdf:type ns1:Place .
-
-<http://example.org/hotel/BQAAqLWJXDnPQ3buknChkA> ns1:category "museum" ;
-ns1:city "Nice" ;
-ns1:country "France" ;
-ns1:countryCode "FR" ;
-ns1:freeFormAddress "5 Place Saint-François, 06300 Nice" ;
-ns1:identifier "BQAAqLWJXDnPQ3buknChkA" ;
-ns1:name "Galerie Caldeira" ;
+ns1:freeFormAddress "12 Rue des Belges, 06400 Cannes" ;
+ns1:identifier "SlAen7slrDhfeyhRth6wKQ" ;
+ns1:name "Galerie Signature" ;
 rdf:type ns1:Place .

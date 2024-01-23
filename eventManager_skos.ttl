@@ -1,0 +1,174 @@
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix pice: <http://example.com/pice#> .
+
+# Concepts de base
+pice:EventSpace a skos:Concept ;
+    skos:prefLabel "Event Space"@en ;
+    skos:definition "A space where events such as parties, conferences, or weddings are held."@en .
+
+pice:City a skos:Concept ;
+    skos:prefLabel "City"@en ;
+    skos:definition "A large town or populated area where events can take place."@en .
+
+# Types d'événements
+pice:Party a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Party"@en ;
+    skos:definition "A social gathering of invited guests, typically involving eating, drinking, and entertainment."@en .
+
+pice:Conference a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Conference"@en ;
+    skos:definition "A formal meeting for discussion, typically one that takes place over several days."@en .
+
+pice:Wedding a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Wedding"@en ;
+    skos:definition "A marriage ceremony, especially considered as including the associated celebrations."@en .
+
+pice:Birthday a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Birthday"@en ;
+    skos:definition "The anniversary of the day on which a person was born, typically treated as an occasion for celebration and the giving of gifts."@en .
+
+# Services d'événements
+pice:Catering a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Catering"@en ;
+    skos:definition "The business of providing food service at a remote site or a site such as a hotel, public house, or other location."@en .
+
+pice:Entertainment a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Entertainment"@en ;
+    skos:definition "Activity designed to give people pleasure or relaxation during the event."@en .
+
+pice:AudioVisualEquipment a skos:Concept ;
+    skos:broader pice:EventSpace ;
+    skos:prefLabel "Audio Visual Equipment"@en ;
+    skos:definition "Electronic media equipment used for the event, such as microphones, projectors, and screens."@en .
+
+pice:Paris a skos:Concept ;
+    skos:broader pice:City ;
+    skos:prefLabel "Paris"@en ;
+    skos:definition "The capital city of France, known for its art, fashion, and cuisine."@en .
+
+pice:Nice a skos:Concept ;
+    skos:broader pice:City ;
+    skos:prefLabel "Nice"@en ;
+    skos:definition "A city in southern France, known for its beautiful beaches and warm climate."@en .
+
+pice:Tokyo a skos:Concept ;
+    skos:broader pice:City ;
+    skos:prefLabel "Tokyo"@en ;
+    skos:definition "The capital city of Japan, known for its modernity, technology, and rich cultural tapestry."@en .
+
+pice:London a skos:Concept ;
+    skos:broader pice:City ;
+    skos:prefLabel "London"@en ;
+    skos:definition "The capital city of the United Kingdom, known for its historical landmarks and cultural heritage."@en .
+
+# Relations
+pice:Paris skos:related pice:Party, pice:Wedding, pice:Conference, pice:Catering, pice:Entertainment .
+pice:Nice skos:related pice:Party, pice:Wedding, pice:Conference, pice:Catering, pice:Entertainment .
+pice:London skos:related pice:Party, pice:Wedding, pice:Conference, pice:Catering, pice:Entertainment .
+pice:Tokyo skos:related pice:Party, pice:Wedding, pice:Conference, pice:Catering, pice:Entertainment .
+
+# Collections SKOS
+pice:EventTypes a skos:Collection ;
+    skos:member pice:Party, pice:Conference, pice:Wedding, pice:Birthday .
+
+pice:EventServices a skos:Collection ;
+    skos:member pice:Catering, pice:Entertainment, pice:AudioVisualEquipment .
+
+pice:Cities a skos:Collection ;
+    skos:member pice:Paris, pice:NewYork, pice:London, pice:Tokyo .
+
+# Concepts de météorologie
+pice:Meteorology a skos:Concept ;
+    skos:prefLabel "Meteorology"@en ;
+    skos:definition "The science that deals with the phenomena of the atmosphere, especially weather and weather conditions."@en .
+
+pice:Temperature a skos:Concept ;
+    skos:broader pice:Meteorology ;
+    skos:prefLabel "Temperature"@en ;
+    skos:definition "A measure of the warmth or coldness of an object or substance with reference to a standard value."@en .
+
+pice:Humidity a skos:Concept ;
+    skos:broader pice:Meteorology ;
+    skos:prefLabel "Humidity"@en ;
+    skos:definition "A quantity representing the amount of water vapor in the atmosphere or a gas."@en .
+
+pice:WeatherCondition a skos:Concept ;
+    skos:broader pice:Meteorology ;
+    skos:prefLabel "Weather Condition"@en ;
+    skos:definition "The state of the atmosphere at a place and time as regards heat, dryness, sunshine, wind, rain, etc."@en .
+
+# Relations
+pice:EventSpace skos:related pice:Meteorology .
+
+# Collections SKOS
+pice:MeteorologicalConcepts a skos:Collection ;
+    skos:member pice:Temperature, pice:Humidity, pice:WeatherCondition .
+
+
+# Concept de base pour Venue
+pice:Venue a skos:Concept ;
+    skos:prefLabel "Venue"@en ;
+    skos:definition "A place where events such as parties, conferences, or weddings are held."@en .
+
+pice:Attendees a skos:Concept ;
+    skos:prefLabel "Attendees"@en ;
+    skos:definition "Individuals who are present at an event space."@en .
+
+# Nouveau concept pour un organisateur de services
+pice:ServiceProvider a skos:Concept ;
+    skos:prefLabel "Service Provider"@en ;
+    skos:definition "An entity that provides essential services for an event."@en .
+
+[ a skos:Collection;
+    skos:prefLabel "Related Elements when we usually organize an event"@en;
+    skos:member pice:Venue;
+    skos:memeber pice:Attendees;
+    skos:member pice:ServiceProvider ] .
+
+    
+# Concepts spécifiques pour chaque catégorie de Venue
+pice:BanquetRooms a skos:Concept ;
+    skos:prefLabel "Banquet Rooms"@en ;
+    skos:broader pice:Venue .
+
+pice:Cinema a skos:Concept ;
+    skos:prefLabel "Cinema"@en ;
+    skos:broader pice:Venue .
+
+pice:BeachClub a skos:Concept ;
+    skos:prefLabel "Beach Club"@en ;
+    skos:broader pice:Venue .
+
+pice:ConventionCenter a skos:Concept ;
+    skos:prefLabel "Convention Center"@en ;
+    skos:broader pice:Venue .
+
+pice:ExhibitionCenter a skos:Concept ;
+    skos:prefLabel "Exhibition Center"@en ;
+    skos:broader pice:Venue .
+
+pice:Hotel a skos:Concept ;
+    skos:prefLabel "Hotel"@en ;
+    skos:broader pice:Venue .
+
+pice:Theater a skos:Concept ;
+    skos:prefLabel "Theater"@en ;
+    skos:broader pice:Venue .
+
+pice:CafePub a skos:Concept ;
+    skos:prefLabel "Café/Pub"@en ;
+    skos:broader pice:Venue .
+
+pice:Restaurant a skos:Concept ;
+    skos:prefLabel "Restaurant"@en ;
+    skos:broader pice:Venue .
+
+# Collection SKOS pour les catégories de Venue
+pice:VenueCategories a skos:Collection ;
+    skos:member pice:BanquetRooms, pice:Cinema, pice:BeachClub, pice:ConventionCenter, pice:ExhibitionCenter, pice:Hotel, pice:Theater, pice:CafePub, pice:Restaurant .

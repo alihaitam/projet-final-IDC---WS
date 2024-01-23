@@ -1,0 +1,225 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix pice: <http://example.com/pice#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+
+# Ontology Declaration
+pice: a owl:Ontology ;
+    rdfs:comment "Ontology for the PICE event planning system." .
+
+# Class Definitions
+dbo:Event rdf:type owl:Class ;
+    rdfs:label "Event"@en, "Évènement"@fr ;
+    rdfs:comment "An event such as a conference, a wedding, or a party."@en, "Un évènement comme un mariage ou une conférence."@fr.
+
+pice:Venue rdf:type owl:Class ;
+    rdfs:label "Venue"@en, "Lieu"@fr ;
+    rdfs:comment "A venue where an event can take Venue."@en, "Un lieu où un évènement peut avoir lieu."@fr .
+
+pice:WeatherForecast rdf:type owl:Class ;
+    rdfs:label "Weather Forecast"@en, "Prévision météorologique"@fr ;
+    rdfs:comment "A weather forecast for a specific date and time."@en, "Une prévision météorologique pour une date et une heure spécifiques."@fr .
+
+dbo:ServiceProvider rdf:type owl:Class ;
+    rdfs:label "Service Provider"@en, "Fournisseur de services"@fr ;
+    rdfs:comment "A company that provides services for events, such as catering, music, or lighting."@en, "Une entreprise qui fournit des services pour les évènements, comme la restauration, la musique ou l'éclairage."@fr .
+
+foaf:Person rdf:type owl:Class ;
+    rdfs:label "Participant" ;
+    rdfs:comment "An individual who attends or takes part in the event." .
+
+pice:Participant rdfs:subClassOf foaf:Person ;
+    rdfs:label "Participant"@en, "Participant"@fr ;
+    rdfs:comment "An individual who attends or takes part in the event."@en, "Un individu qui assiste ou participe à l'évènement."@fr .
+
+pice:Equipment rdf:type owl:Class ;
+    rdfs:label "Equipment"@en, "Équipement"@fr ;
+    rdfs:comment "Equipment used for the event."@en, "Équipement utilisé pour l'évènement."@fr .
+
+
+# Property Definitions
+dbo:location rdf:type owl:ObjectProperty ;
+    rdfs:domain dbo:Event ;
+    rdfs:range pice:Venue ;
+    rdfs:label "location" ;
+    rdfs:comment "The location where the event takes Venue." .
+
+pice:organizedBy rdf:type owl:ObjectProperty ;
+    rdfs:domain dbo:Event ;
+    rdfs:range dbo:ServiceProvider ;
+    rdfs:label "organize by" ;
+    rdfs:comment "The service provider that offers services for the event." .
+
+dbo:organize rdf:type owl:ObjectProperty ;
+    rdfs:domain dbo:ServiceProvider ;
+    rdfs:range dbo:Event ;
+    rdfs:label "organize" ;
+    rdfs:comment "The event organized by the service provider." .
+
+foaf:knows rdf:type owl:ObjectProperty ;
+    rdfs:domain foaf:Person ;
+    rdfs:range foaf:Person ;
+    rdfs:label "knows" ;
+    rdfs:comment "A relation indicating a person known by another person." .
+
+pice:hasEquipment rdf:type owl:ObjectProperty ;
+    rdfs:domain dbo:Event ;
+    rdfs:range pice:Equipment ;
+    rdfs:label "has equipment" ;
+    rdfs:comment "The equipment used for the event." .
+
+pice:venueCategory rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:Venue ;
+    rdfs:range xsd:string ;
+    rdfs:label "venue category" .
+
+# Date and Theme Properties
+dbo:startDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain dbo:Event ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "start date" ;
+    rdfs:comment "The start date and time of the event." .
+
+dbo:endDate rdf:type owl:DatatypeProperty ;
+    rdfs:domain dbo:Event ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "end date" ;
+    rdfs:comment "The end date and time of the event." .
+
+dbo:theme rdf:type owl:ObjectProperty ;
+    rdfs:domain dbo:Event ;
+    rdfs:range rdfs:Literal ;
+    rdfs:label "theme" ;
+    rdfs:comment "The theme of the event." .
+
+# Propriétés pour WeatherForecast
+pice:hasTemperature rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:WeatherForecast ;
+    rdfs:range xsd:float ;
+    rdfs:label "has temperature" ;
+    rdfs:comment "The temperature at the time of the forecast." .
+
+pice:hasWeatherDescription rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:WeatherForecast ;
+    rdfs:range xsd:string ;
+    rdfs:label "has weather description" ;
+    rdfs:comment "A textual description of the weather conditions." .
+
+pice:hasMinTemperature rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:WeatherForecast ;
+    rdfs:range xsd:float ;
+    rdfs:label "has minimum temperature" ;
+    rdfs:comment "The minimum temperature forecasted." .
+
+pice:hasMaxTemperature rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:WeatherForecast ;
+    rdfs:range xsd:float ;
+    rdfs:label "has maximum temperature" ;
+    rdfs:comment "The maximum temperature forecasted." .
+
+
+pice:hasHumidity rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:WeatherForecast ;
+    rdfs:range xsd:float ;
+    rdfs:label "has humidity" ;
+    rdfs:comment "The humidity level at the time of the forecast." .
+
+owl:AllDisjointProperties (
+  pice:hasTemperature pice:hasMinTemperature pice:hasMaxTemperature pice:hasHumidity
+).
+
+pice:hasWeatherIcon rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:WeatherForecast ;
+    rdfs:range xsd:string ;
+    rdfs:label "has weather icon" ;
+    rdfs:comment "A reference to an icon representing the weather conditions." .
+
+pice:hasForecastTime rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:WeatherForecast ;
+    rdfs:range xsd:dateTime ;
+    rdfs:label "has forecast time" ;
+    rdfs:comment "The date and time of the weather forecast." .
+
+# Relier la prévision météorologique à l'événement
+pice:hasWeatherForecast rdf:type owl:ObjectProperty ;
+    rdfs:domain dbo:Event ;
+    rdfs:range pice:WeatherForecast ;
+    rdfs:label "has weather forecast" ;
+    rdfs:comment "The weather forecast associated with the event." .
+
+# Propriétés pour la Classe Lieu
+pice:hasAddress rdf:type owl:DatatypeProperty ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf ( pice:Venue pice:serviceProvider )
+    ] ;
+    rdfs:range xsd:string ;
+    rdfs:label "address" ;
+    rdfs:comment "The address of the Venue or the ServiceProvider" .
+
+pice:hasCategory rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:Venue ;
+    rdfs:range xsd:string ;
+    rdfs:label "category" ;
+    rdfs:comment "The category of the Venue (e.g., hotel, restaurant)." .
+
+pice:hasCapacity rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:Venue ;
+    rdfs:range xsd:integer ;
+    rdfs:label "capacity" ;
+    rdfs:comment "The maximum number of people that can be accommodated by the Venue." .
+
+pice:hasIdentifier rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:Venue ;
+    rdfs:range xsd:string ;
+    rdfs:label "identifier" ;
+    rdfs:comment "A unique identifier for the Venue." .
+
+pice:hasName rdf:type owl:DatatypeProperty ;
+    rdfs:domain pice:Venue ;
+    rdfs:range xsd:string ;
+    rdfs:label "name" ;
+    rdfs:comment "The name of the Venue." .
+
+pice:hasProviderName rdf:type owl:DatatypeProperty ;
+    rdfs:domain dbo:ServiceProvider ;
+    rdfs:range xsd:string ;
+    rdfs:label "provider name" ;
+    rdfs:comment "The name of the service provider." .
+
+pice:hasPrice rdf:type owl:DatatypeProperty ;
+    rdfs:domain dbo:ServiceProvider ;
+    rdfs:range xsd:float ;
+    rdfs:label "price" ;
+    rdfs:comment "The price offered by the service provider." .
+
+pice:hasPhone rdf:type owl:DatatypeProperty ;
+    rdfs:domain dbo:ServiceProvider ;
+    rdfs:range xsd:string ;
+    rdfs:label "phone" ;
+    rdfs:comment "The phone number of the service provider." .
+
+pice:hasRegion rdf:type owl:DatatypeProperty ;
+    rdfs:domain dbo:ServiceProvider ;
+    rdfs:range xsd:string ;
+    rdfs:label "region" ;
+    rdfs:comment "The region where the service provider operates." .
+
+pice:hasCity rdf:type owl:DatatypeProperty ;
+    rdfs:domain [
+        rdf:type owl:Class ;
+        owl:unionOf ( pice:Venue pice:serviceProvider )
+    ] ;
+    rdfs:range xsd:string ;
+    rdfs:label "city" ;
+    rdfs:comment "The city where the service provider is located." .
+
+pice:hasTheme rdf:type owl:DatatypeProperty ;
+    rdfs:domain dbo:ServiceProvider ;
+    rdfs:range xsd:string ;
+    rdfs:label "theme" ;
+    rdfs:comment "The theme associated with the service provider." .

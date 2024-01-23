@@ -74,7 +74,7 @@ def run_venueCategory_query(venueCategory, city_name):
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX org: <file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#>
 
-        SELECT ?venueName ?venueAddress ?venueCity ?providerName ?providerPrice ?providerPhone ?provviderCity
+        SELECT ?venueName ?venueAddress ?venueCity ?providerName ?providerPrice ?providerPhone ?providerCity
         WHERE {{
         {{
             ?place ns1:name ?venueName .
@@ -142,7 +142,6 @@ def create_venue_cards(venue_results, category):
     category_image_url = image_folder_path + category_image_filename
     category_image_url = f"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 
-    st.write(category_image_url)
     # Création du HTML pour les cartes
     cards_html = '<div style="display: flex; overflow-x: auto;">'
     for venue in venue_results:

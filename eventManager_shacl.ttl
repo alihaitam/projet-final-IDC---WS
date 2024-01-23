@@ -1,0 +1,123 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix pice: <http://example.com/pice#> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+pice:EventShape a sh:NodeShape ;
+    sh:targetClass dbo:Event ;
+    sh:property [
+        sh:path dbo:startDate ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dbo:endDate ;
+        sh:datatype xsd:dateTime ;
+        sh:minCount 1 ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+        sh:path dbo:location ;
+        sh:class pice:Venue ;
+        sh:maxCount 1 ;
+    ] ;
+    sh:property [
+    sh:path dbo:location ;
+    sh:class pice:Venue ;
+    sh:message "location must be an instance of pice:Venue." ;
+    ] ;
+    sh:property [
+        sh:path dbo:providedBy ;
+        sh:class dbo:Organisation ;
+        sh:message "providedBy must be an instance of dbo:Organisation." ;
+    ] ;
+    sh:targetClass dbo:Event ;
+    sh:property [
+        sh:path dbo:startDate ;
+        sh:lessThan dbo:endDate ;
+    ] .
+    
+
+# Contraintes pour pice:Venue
+pice:VenueShape a sh:NodeShape ;
+    sh:targetClass pice:Venue ;
+    sh:property [
+        sh:path pice:hasAddress ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path pice:hasAddress ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:message "Address must be a non-empty string." ;
+    ] .
+
+
+# Contraintes pour dbo:Organisation
+pice:OrganisationShape a sh:NodeShape ;
+    sh:targetClass dbo:ServiceProvider ;
+    sh:property [
+        sh:path pice:hasName ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path pice:hasName ;
+        sh:datatype xsd:string ;
+        sh:minLength 1 ;
+        sh:message "Name must be a non-empty string." ;
+    ] ;
+    sh:property [
+        sh:path pice:hasPrice ;
+        sh:datatype xsd:float ;
+        sh:minInclusive 0 ;
+        sh:message "Price must be a non-negative number." ;
+    ] .
+    
+
+pice:WeatherForecastShape a sh:NodeShape ;
+    sh:targetClass pice:WeatherForecast ;
+    sh:property [
+        sh:path pice:hasTemperature ;
+        sh:datatype xsd:float ;
+    ] ;
+    sh:property [
+        sh:path pice:hasMinTemperature ;
+        sh:datatype xsd:float ;
+    ] ;
+    sh:property [
+        sh:path pice:hasMaxTemperature ;
+        sh:datatype xsd:float ;
+    ] ;
+    sh:property [
+        sh:path pice:hasHumidity ;
+        sh:datatype xsd:float ;
+    ] ;
+    sh:property [
+        sh:path pice:hasWeatherDescription ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path pice:hasWeatherIcon ;
+        sh:datatype xsd:string ;
+    ] ;
+    sh:property [
+        sh:path pice:hasForecastTime ;
+        sh:datatype xsd:dateTime ;
+    ] ;
+    sh:property [
+        sh:path pice:hasMinTemperature ;
+        sh:lessThanOrEquals pice:hasMaxTemperature ;
+        sh:message "Minimum temperature must be less than or equal to maximum temperature." ;
+    ] .
+
+
+pice:VenueShape a sh:NodeShape ;
+    sh:targetClass pice:Venue ;
+    sh:property [
+        sh:path pice:venueCategory ;
+        sh:in ("banquet Rooms" "cinema" "beach Club" "convention Center" "stadium" "hotel" "theater" "café Pub" "restaurant") ;
+        sh:message "Venue category must be one of the predefined categories." ;
+    ] .
