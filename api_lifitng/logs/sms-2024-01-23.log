@@ -22237,3 +22237,603 @@ PREFIX geo:&lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; PREFIX schema:&lt;ht
 2024-01-23 12:52:27 ["m4srgh9mijmpq"] service NOTICE: Evaluating client SPARQL query against temporary graph...
 2024-01-23 12:52:27 ["m4srgh9mijmpq"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
 2024-01-23 12:52:27 ["m4srgh9mijmpq"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:09:04 ["fgrdld11jmrrv"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:09:32 ["o8bf9lqpue8nt"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:11:18 ["p16v7aisrhr9i"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:11:42 ["rc6k3iueac3pd"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:11:59 ["ee9669vs9g18r"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:11:59 ["ee9669vs9g18r"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:11:59 ["ee9669vs9g18r"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:11:59 ["ee9669vs9g18r"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:13:02 ["1vnja632bu14k"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:13:02 ["1vnja632bu14k"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:13:02 ["1vnja632bu14k"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:13:02 ["1vnja632bu14k"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:13:15 ["rk0t5sco7tq5h"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:13:53 ["vj2i5hn0antsp"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:14:08 ["7hk8n9dksrdtc"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:14:09 ["7hk8n9dksrdtc"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:14:32 ["a834a2c7darcq"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:14:32 ["a834a2c7darcq"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:14:32 ["a834a2c7darcq"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+select * 
+where {
+  {?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .}
+}
+
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:14:32 ["a834a2c7darcq"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:19:14 ["i4mrkgddqigo9"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:20:17 ["i35cu3klcta76"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:20:17 ["i35cu3klcta76"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:20:17 ["i35cu3klcta76"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:20:17 ["i35cu3klcta76"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:21:05 ["h7t45b6cr91dc"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:22:12 ["5tttknoek6qmg"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:22:12 ["5tttknoek6qmg"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:22:12 ["5tttknoek6qmg"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:22:12 ["5tttknoek6qmg"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:26:36 ["73jsjh0tv34bd"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:28:50 ["nbii2qbomh0r6"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:32:46 ["esg71pi639to9"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:32:46 ["esg71pi639to9"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:32:46 ["esg71pi639to9"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:32:46 ["esg71pi639to9"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:32:58 ["4nkseo4env2ml"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:32:58 ["4nkseo4env2ml"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:32:58 ["4nkseo4env2ml"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:32:58 ["4nkseo4env2ml"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:32:58 ["4nkseo4env2ml"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:32:58 ["4nkseo4env2ml"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:32:58 ["4nkseo4env2ml"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:32:58 ["4nkseo4env2ml"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:32:59 ["4nkseo4env2ml"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:32:59 ["4nkseo4env2ml"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:32:59 ["4nkseo4env2ml"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:32:59 ["4nkseo4env2ml"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:33:35 ["778l12b9vombk"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:33:35 ["778l12b9vombk"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:33:35 ["778l12b9vombk"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:33:35 ["778l12b9vombk"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:36:05 ["a0gdcq560n037"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:36:05 ["a0gdcq560n037"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:36:05 ["a0gdcq560n037"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:36:05 ["a0gdcq560n037"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: --------- Done - SPARQL µS execution --------

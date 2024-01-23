@@ -1,0 +1,35 @@
+1) Afficher Tous les lieux / les locations qui peuvent acceuillir un evenement
+   et pour lequels on peut trouver un organisateur à Paris où la températue ne doit jamais etre
+   négative pour les prochains cinq jours
+
+prefix : <http://ns.inria.fr/sparql-micro-service/api#>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+prefix schema: <http://schema.org/#>
+prefix org: <file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#>
+
+SELECT DISTINCT ?venueName ?venueCategory
+WHERE {
+        ?venue a schema:Place ;
+            schema:name ?venueName ;
+            schema:category ?venueCategory ;
+            schema:freeFormAddress ?venueAddress ;
+            schema:city ?venueCity .
+
+        ?organizer org:provider_name ?providerName ;
+	org:city ?providerCity .
+
+    SERVICE <http://localhost/service/openweathermap/forecast?city=paris> {
+        ?forecast schema:temp ?temp ;
+            schema:dt_txt ?dt_txt ;
+            schema:description ?description ;
+            schema:cityName ?cityName ;
+            schema:dt ?dt .
+    }
+    FILTER(LCASE(STR(?providerCity)) = "paris")
+    FILTER(?temp > 0)
+}
+ORDER BY (?dt)
+LIMIT 10
+
+
+2)

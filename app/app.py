@@ -181,10 +181,11 @@ def main():
     st.set_page_config(page_title="City Finder", layout="wide")
 
     # Title and introduction text
-    st.title('🌍 City Latitude and Longitude Finder')
+    st.title('🌍 EVENT MANAGER ')
     st.markdown("""
-        Welcome to the City Latitude and Longitude Finder. 
-        Enter the name of a city and find its geographical coordinates and weather information.
+        Welcome to the best Event Manager in the world! 🎉
+        When you can find anything you want about organizing your event 🤩
+                
     """)
 
     # Initialize session state variables if they don't exist
