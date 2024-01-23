@@ -7,7 +7,7 @@ import streamlit.components.v1 as components
 def call_bash_script(city_name):
     try:
         process = subprocess.Popen(
-            ['C:\\Program Files\\Git\\git-bash.exe', 'C:\\Users\\user\\Desktop\\projet 100%\\projet-final-IDC-WS\\api_lifitng\\services\\utils\\script.sh', city_name],
+            ['C:\\Program Files\\Git\\git-bash.exe', 'C:\\Users\\user\\Desktop\\projet 100%\\projet-final-IDC-WS\\api_lifitng\\services\\utils\\data-script.sh', city_name],
             stdout=subprocess.PIPE, 
             stderr=subprocess.PIPE)
         stdout, stderr = process.communicate()
@@ -17,7 +17,6 @@ def call_bash_script(city_name):
             return f"Error: {stderr.decode()}"
     except Exception as e:
         return str(e)
-
 
 # Function to query weather information using RDFLib and SPARQL
 def get_weather_info(city_name):
@@ -56,53 +55,56 @@ def get_weather_info(city_name):
 
     except Exception as e:
         return str(e)
-
+    
 
 # Function to run the federated query
-def run_federated_query(city_name):
+def run_venueCategory_query(venueCategory, city_name):
     try:
         # Load the local .ttl file into a graph
         g = ConjunctiveGraph()
-        g.parse("C:/Users/user/Desktop/projet 100%/projet-final-IDC-WS/csv_lifitng/prestataires.ttl", format="turtle")
+        g.parse(r"C:\Users\user\Desktop\projet 100%\projet-final-IDC-WS\api_lifitng\data\city_venues.ttl", format="turtle")
+        g.parse(r"C:\Users\user\Desktop\projet 100%\projet-final-IDC-WS\csv_lifitng\services_providers.ttl", format="turtle")
 
-        # SPARQL federated query
+        city_name_lower = city_name.lower()
+        venueCategory_lower = venueCategory.lower()
+
+        # SPARQL query using the provided venueCategory
         query = f"""
-        PREFIX : <http://ns.inria.fr/sparql-micro-service/api#>
-        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX ns1: <http://schema.org/#>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-        PREFIX schema: <http://schema.org/#>
         PREFIX org: <file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#>
 
-        SELECT ?city ?organizer ?theme ?description
+        SELECT ?venueName ?venueAddress ?venueCity ?providerName ?providerPrice ?providerPhone ?provviderCity
         WHERE {{
-            ?organizer org:theme ?theme ;
-                org:city ?city .	
-
-            SERVICE <http://localhost/service/openweathermap/forecast?city={city_name}> {{
-                ?forecast schema:temp ?temp ;
-                schema:dt_txt ?dt_txt ;
-                schema:description ?description ;
-                schema:cityName ?cityName .
-            }}
-            FILTER (STR(?cityName) = STR(?city))
+        {{
+            ?place ns1:name ?venueName .
+            OPTIONAL {{ ?place ns1:freeFormAddress ?venueAddress ; }}
+            OPTIONAL {{ ?place ns1:city ?venueCity ; }}
+            OPTIONAL {{ ?place ns1:category ?venueCategory ; }}
+        }} UNION {{
+            ?provider org:provider_name ?providerName .
+            OPTIONAL {{ ?provider org:theme ?providerTheme ; }}
+            OPTIONAL {{ ?provider org:price ?providerPrice ; }}
+            OPTIONAL {{ ?provider org:phone ?providerPhone ; }}
+            OPTIONAL {{ ?provider org:city ?providerCity ; }}
+            FILTER (LCASE(STR(?providerCity)) = STR("{city_name_lower}"))
         }}
-        ORDER BY (?dt)
+        }}
         """
 
-        # Execute the federated query
+        # Execute the query
         results = g.query(query)
-        print("XXXXXXXXXXX", results)
-
         return results
 
     except Exception as e:
-        return str(e)
-    
+        st.write(f"An error occurred: {e}")
+
 
 # Function to create HTML for the weather cards
 def create_weather_cards(weather_results):
     cards_html = '<div style="display: flex; overflow-x: auto;">'
     for row in weather_results:
+        # print the icon code
         # Check if icon data exists for this row
         if hasattr(row, 'icon') and row.icon:
             icon_code = row.icon
@@ -130,6 +132,51 @@ def create_weather_cards(weather_results):
     return cards_html
 
 
+# Function to create HTML for the venue cards
+def create_venue_cards(venue_results, category):
+    # Utiliser un chemin relatif pour le dossier des images
+    image_folder_path = "./images/" 
+
+    # Construire le chemin de l'image en fonction de la catégorie
+    category_image_filename = category.lower().replace(" ", "_") + ".jpg"
+    category_image_url = image_folder_path + category_image_filename
+    category_image_url = f"https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+
+    st.write(category_image_url)
+    # Création du HTML pour les cartes
+    cards_html = '<div style="display: flex; overflow-x: auto;">'
+    for venue in venue_results:
+        card_html = f"""
+            <div style="min-width: 310px; margin: 10px; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #e1f5fe; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,.2); font-family: 'Arial', sans-serif;">
+                <img src="{category_image_url}" alt="{category}" style="width: 100px; height: auto; margin-bottom: 10px;">
+                <h3 style="text-align: center; margin: 0; font-weight: bold;">{venue[0]}</h3>
+                <p style="text-align: center; margin: 7px 0;"><b>Adresse :</b> {venue[1]}</p>
+                <p style="text-align: center; margin: 7px 0;"><b>Ville :</b> {venue[2]}</p>
+            </div>
+        """
+        cards_html += card_html
+    cards_html += '</div>'
+    return cards_html
+
+
+# Function to create HTML for the provider cards
+def create_provider_cards(provider_results):
+    cards_html = '<div style="display: flex; overflow-x: auto;">'
+    for provider in provider_results:
+        card_html = f"""
+            <div style="min-width: 310px; margin: 10px; padding: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: #ffe0b2; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,.2); font-family: 'Arial', sans-serif;">
+                <h3 style="text-align: center; margin: 0; font-weight: bold;">{provider[0]}</h3>
+                <p style="text-align: center; margin: 7px 0;"><b>Prix moyen :</b> {provider[1]}</p>
+                <p style="text-align: center; margin: 7px 0;"><b>Téléphone :</b> {provider[2]}</p>
+                <p style="text-align: center; margin: 7px 0;"><b>Ville :</b> {provider[3]}</p>
+            </div>
+        """
+        cards_html += card_html
+    cards_html += '</div>'
+    return cards_html
+
+
+
 def main():
     # Set page configuration
     st.set_page_config(page_title="City Finder", layout="wide")
@@ -141,49 +188,105 @@ def main():
         Enter the name of a city and find its geographical coordinates and weather information.
     """)
 
-    # Input form
-    with st.form(key='city_form'):
-        city_name = st.text_input('Enter the name of a city')
-        submit_button = st.form_submit_button(label='Find and Process')
+    # Initialize session state variables if they don't exist
+    if 'city_name' not in st.session_state:
+        st.session_state.city_name = ""
+    if 'city_selected' not in st.session_state:
+        st.session_state.city_selected = False
+    if 'category_selected' not in st.session_state:
+        st.session_state.category_selected = False
 
-    # Input form for federated query
-    with st.form(key='federated_query_form'):
-        city_name_query = st.text_input('Enter the name of a city for details')
-        get_info_button = st.form_submit_button(label='Get Infos')
+    # Define venue categories with unique key numbers
+    venue_categories = {
+        "restaurant": 1,
+        "cinema": 2,
+        "beach Club": 3,
+        "museum": 4,
+        "stadium": 5,
+        "hotel": 6,
+        "theater": 7,
+        "café Pub": 8,
+        "banquet Rooms": 9,
+        "convention Center": 10,
+    }
 
-    if get_info_button:
-        if city_name_query:
-            # Run federated query
-            federated_results = run_federated_query(city_name_query)
-            # You'll need to decide how to display these results.
-            # This is an example using markdown, you might want to format it into a table or differently
-            st.markdown("## Federated Query Results")
-            for row in federated_results:
-                st.markdown(f"- Organizer: {row.organizer}, Theme: {row.theme}, Description: {row.description}")
-        else:
-            st.error("Please enter a city name for details")
+    # Input for city name
+    city_name = st.text_input('Enter the name of a city', key="city_name_input", value=st.session_state.city_name)
+    submit_button = st.button(label='Find and Process', key="submit_button")
 
     if submit_button:
-        if city_name:
-            # Get coordinates
-            coord_result = call_bash_script(city_name)
-            st.markdown("## Coordinates Results")
-            st.text_area("Coordinates Output:", value=coord_result, height=150)
+        st.session_state.city_name = city_name
+        st.session_state.city_selected = True
+        st.success(f"City name '{city_name}' received.")
+        call_bash_script(city_name)
 
-            # Get weather information
-            weather_results = get_weather_info(city_name)
-            st.markdown("## Weather Information")
+        # Get weather information
+        weather_results = get_weather_info(city_name)
+        st.markdown("## Weather Information")
 
-            # Generate and display weather cards
-            weather_cards_html = create_weather_cards(weather_results)
-            components.html(weather_cards_html, height=400)
+        # Generate and display weather cards
+        weather_cards_html = create_weather_cards(weather_results)
+        components.html(weather_cards_html, height=400)
 
-        else:
-            st.error("Please enter a city name")
+    # If a city is selected, show category selection form
+    if st.session_state.city_selected and not st.session_state.category_selected:
+        selected_category = st.selectbox('Select your desired category', list(venue_categories.keys()), key="category_select")
+        category_submit_button = st.button(label='View Choices', key="category_submit_button")
 
+        if category_submit_button:
+            st.session_state.category_selected = True
+            # Call the function and get the results
+            category_results = run_venueCategory_query(selected_category, city_name)
+            # Check if results is a string (an error message)
+            if isinstance(category_results, str):
+                st.error(category_results)
+            else:
+                # Initialisation des listes pour les lieux et les prestataires
+                venues = []
+                providers = []
+
+                # Parcourir chaque résultat et les classer dans les listes appropriées
+                for row in category_results:
+                    if row.providerName is None:
+                        venues.append((row.venueName, row.venueAddress, row.venueCity))
+                    elif row.venueName is None:
+                        providers.append((row.providerName, row.providerPrice, row.providerPhone, row.provviderCity))
+
+                # Génération et affichage des cartes pour les lieux
+                if venues:
+                    st.markdown("### Liste des Lieux (Venues)")
+                    venue_cards_html = create_venue_cards(venues, selected_category)
+                    components.html(venue_cards_html, height=400)
+                else:
+                    st.markdown("Aucun lieu trouvé.")
+
+                # Génération et affichage des cartes pour les prestataires
+                if providers:
+                    st.markdown("### Liste des Prestataires de Services")
+                    provider_cards_html = create_provider_cards(providers)
+                    components.html(provider_cards_html, height=400)
+                else:
+                    st.markdown("Aucun prestataire trouvé.")
     # Footer
     st.markdown("---")
     st.markdown("City Latitude and Longitude Finder © 2024. All Rights Reserved.")
 
+
 if __name__ == "__main__":
     main()
+
+
+
+# # Define venue categories with unique key numbers
+# venue_categories = {
+#     "restaurant": 1,
+#     "cinema": 2,
+#     "beach Club": 3,
+#     "museum": 4,
+#     "stadium": 5,
+#     "hotel": 6,
+#     "theater": 7,
+#     "café/Pub": 8,
+#     "banquet Rooms": 9,
+#     "convention Center": 10,
+# }

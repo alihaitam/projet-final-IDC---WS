@@ -1,0 +1,43 @@
+{
+    "@context": "http://www.w3.org/ns/csvw",
+    "url": "prestataires_et_organisateurs_details.csv",
+    "tableSchema": {
+        "columns": [
+            {
+                "titles": "Nom du prestataire",
+                "name": "provider_name",
+                "datatype": "string"
+            },
+            {
+                "titles": "À propos de l'organisateur",
+                "name": "about_organizer",
+                "datatype": "string"
+            },
+            {
+                "titles": "Tarif",
+                "name": "price",
+                "datatype": "string"
+            },
+            {
+                "titles": "Adresse",
+                "name": "address",
+                "datatype": "string"
+            },
+            {
+                "titles": "Téléphone",
+                "name": "phone",
+                "datatype": "string"
+            },
+            {
+                "titles": "Région",
+                "name": "region",
+                "datatype": "string"
+            },
+            {
+                "titles": "Ville",
+                "name": "city",
+                "datatype": "string"
+            }
+        ]
+    }
+}

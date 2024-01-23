@@ -10,13 +10,10 @@ CONSTRUCT {
         schema:identifier ?placeId;
         schema:name ?placeName;
         schema:category ?categories;
-        schema:address [
-            a schema:PostalAddress;
-            schema:city ?municipality;
-            schema:country ?country;
-            schema:countryCode ?countryCode;
-            schema:freeFormAddress ?freeformAddress;
-        ];
+        schema:city ?municipality;
+        schema:country ?country;
+        schema:countryCode ?countryCode;
+        schema:freeFormAddress ?freeformAddress;
 }
 
 WHERE {
