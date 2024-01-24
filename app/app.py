@@ -250,7 +250,7 @@ def main():
                     if row.providerName is None:
                         venues.append((row.venueName, row.venueAddress, row.venueCity))
                     elif row.venueName is None:
-                        providers.append((row.providerName, row.providerPrice, row.providerPhone, row.provviderCity))
+                        providers.append((row.providerName, row.providerPrice, row.providerPhone, row.providerCity))
 
                 # Génération et affichage des cartes pour les lieux
                 if venues:

@@ -22837,3 +22837,467 @@ where {
 2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Evaluating client SPARQL query against temporary graph...
 2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
 2024-01-23 14:39:03 ["ci1kjjpov3dbd"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:08:31 ["133544tgj21rb"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:08:31 ["133544tgj21rb"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 15:08:31 ["133544tgj21rb"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+xml
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Client SPARQL query (html special chars encoded):
+prefix : &lt;http://ns.inria.fr/sparql-micro-service/api#&gt;
+prefix schema: &lt;http://schema.org/#&gt;
+prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+prefix org: &lt;file:/mnt/c/Users/anass/Downloads/TP_IDC/prestataires_et_organisateurs_details.csv#&gt;
+prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+select * 
+where {
+  ?forecast schema:temp ?temp .
+  ?forecast schema:dt_txt ?dt_txt .
+  ?forecast schema:description ?description .
+  ?forecast schema:cityName ?cityName .
+  ?forecast schema:dt ?dt .
+}
+
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: Sending response with Content-Type: application/sparql-results+xml
+2024-01-23 15:08:31 ["133544tgj21rb"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 7315146
+)
+
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=7315146
+2024-01-23 15:57:04 ["ptpnlkg88kq17"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:05 ["ptpnlkg88kq17"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:05 ["ptpnlkg88kq17"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:05 ["ptpnlkg88kq17"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:05 ["qfcikj9kpbars"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:05 ["qfcikj9kpbars"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:05 ["qfcikj9kpbars"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 7342
+)
+
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=7342
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:05 ["qfcikj9kpbars"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 9937002
+)
+
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=9937002
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:06 ["p4nsftle7s8g0"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 9377
+)
+
+2024-01-23 15:57:06 ["vvnsnr1cval0s"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=9377
+2024-01-23 15:57:07 ["vvnsnr1cval0s"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:07 ["vvnsnr1cval0s"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:07 ["vvnsnr1cval0s"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:07 ["vvnsnr1cval0s"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:07 ["513c2j9c1akqb"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:07 ["513c2j9c1akqb"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:07 ["513c2j9c1akqb"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 7314003
+)
+
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=7314003
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:07 ["513c2j9c1akqb"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:08 ["uag00es05de7o"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:08 ["uag00es05de7o"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:08 ["uag00es05de7o"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 7318
+)
+
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=7318
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:08 ["uag00es05de7o"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:08 ["njm6ufasde5c0"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:08 ["njm6ufasde5c0"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:08 ["njm6ufasde5c0"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:08 ["njm6ufasde5c0"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:08 ["njm6ufasde5c0"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:08 ["njm6ufasde5c0"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:09 ["njm6ufasde5c0"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 9376
+)
+
+2024-01-23 15:57:09 ["njm6ufasde5c0"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=9376
+2024-01-23 15:57:09 ["njm6ufasde5c0"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:09 ["njm6ufasde5c0"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:09 ["njm6ufasde5c0"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:09 ["njm6ufasde5c0"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 7315
+)
+
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=7315
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:09 ["f3pdmdqi3dpp3"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:10 ["s19f246tsto4l"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:10 ["s19f246tsto4l"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:10 ["s19f246tsto4l"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 7374
+)
+
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=7374
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:10 ["s19f246tsto4l"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 43.7009358
+    [lon] => 7.2683912
+    [categorySet] => 7317
+)
+
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=43%2E7009358&lon=7%2E2683912&limit=15&categorySet=7317
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:57:10 ["p37m0gtqu26d7"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:57:12 ["ns9296cli3ju4"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:57:12 ["ns9296cli3ju4"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 15:57:12 ["ns9296cli3ju4"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Client SPARQL query (html special chars encoded):
+PREFIX geo:&lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; PREFIX schema:&lt;http://schema.org/#&gt; PREFIX :&lt;http://ns.inria.fr/sparql-micro-service/api#&gt; PREFIX xml:&lt;http://www.w3.org/XML/1998/namespace&gt; PREFIX xsd:&lt;http://www.w3.org/2001/XMLSchema#&gt; PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt; PREFIX rdf:&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX owl:&lt;http://www.w3.org/2002/07/owl#&gt; PREFIX wgs:&lt;https://www.w3.org/2003/01/geo/wgs84_pos#&gt; PREFIX void:&lt;http://rdfs.org/ns/void#&gt; PREFIX vann:&lt;http://purl.org/vocab/vann/&gt; PREFIX time:&lt;http://www.w3.org/2006/time#&gt; PREFIX ssn:&lt;http://www.w3.org/ns/ssn/&gt; PREFIX sosa:&lt;http://www.w3.org/ns/sosa/&gt; PREFIX skos:&lt;http://www.w3.org/2004/02/skos/core#&gt; PREFIX sh:&lt;http://www.w3.org/ns/shacl#&gt; PREFIX qb:&lt;http://purl.org/linked-data/cube#&gt; PREFIX prov:&lt;http://www.w3.org/ns/prov#&gt; PREFIX prof:&lt;http://www.w3.org/ns/dx/prof/&gt; PREFIX org:&lt;http://www.w3.org/ns/org#&gt; PREFIX odrl:&lt;http://www.w3.org/ns/odrl/2/&gt; PREFIX foaf:&lt;http://xmlns.com/foaf/0.1/&gt; PREFIX doap:&lt;http://usefulinc.com/ns/doap#&gt; PREFIX dcam:&lt;http://purl.org/dc/dcam/&gt; PREFIX dcterms:&lt;http://purl.org/dc/terms/&gt; PREFIX dcmitype:&lt;http://purl.org/dc/dcmitype/&gt; PREFIX dcat:&lt;http://www.w3.org/ns/dcat#&gt; PREFIX dc:&lt;http://purl.org/dc/elements/1.1/&gt; PREFIX csvw:&lt;http://www.w3.org/ns/csvw#&gt; PREFIX brick:&lt;https://brickschema.org/schema/Brick#&gt; SELECT REDUCED * WHERE {
+                ?forecast schema:temp ?temp ;
+                schema:dt_txt ?dt_txt ;
+                schema:feels_like ?feels_like ;
+                schema:description ?description ;
+                schema:temp_min ?temp_min ;
+                schema:temp_max ?temp_max ;
+                schema:humidity ?humidity ;
+                schema:icon ?icon ;
+                schema:dt ?dt
+            }
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => nice
+)
+
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=nice&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-23 15:57:12 ["ns9296cli3ju4"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 7315146
+)
+
+2024-01-23 15:59:25 ["9h4lfcjdpl8dj"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=7315146
+2024-01-23 15:59:26 ["9h4lfcjdpl8dj"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:26 ["9h4lfcjdpl8dj"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:26 ["9h4lfcjdpl8dj"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:26 ["9h4lfcjdpl8dj"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 7342
+)
+
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=7342
+2024-01-23 15:59:26 ["1q71ae7sh1hue"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:27 ["1q71ae7sh1hue"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:27 ["1q71ae7sh1hue"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:27 ["1q71ae7sh1hue"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 9937002
+)
+
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=9937002
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:27 ["fqh1sgfn9ogje"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:28 ["r8459m9mpujtf"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:28 ["r8459m9mpujtf"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:28 ["r8459m9mpujtf"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 9377
+)
+
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=9377
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:28 ["r8459m9mpujtf"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 7314003
+)
+
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=7314003
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:29 ["28k4qmk4ojfo7"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 7318
+)
+
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=7318
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:30 ["d4mev9f6nko1j"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:31 ["g8s380mff10hc"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:31 ["g8s380mff10hc"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:31 ["g8s380mff10hc"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 9376
+)
+
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=9376
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:31 ["g8s380mff10hc"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 7315
+)
+
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=7315
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:31 ["ocoqtg3r43mqm"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:32 ["inv0n0dddvclh"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:32 ["inv0n0dddvclh"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:32 ["inv0n0dddvclh"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 7374
+)
+
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=7374
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:32 ["inv0n0dddvclh"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] service NOTICE: Query parameter (html special chars encoded) 'service': tomtom/findPlace
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] Utils NOTICE: Query HTTP header "Content-Type" undefined.
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] Utils NOTICE: Query HTTP header "Accept": text/turtle
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] service NOTICE: Client SPARQL query (html special chars encoded):
+construct WHERE { ?s ?p ?o } 
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [lat] => 48.8588897
+    [lon] => 2.3200410217200766
+    [categorySet] => 7317
+)
+
+2024-01-23 15:59:32 ["f6he1tjrto3sp"] service NOTICE: Web API query string: https://api.tomtom.com/search/2/categorySearch/.json?key=wIthmoUf6toN66cs7cEfSiuS52fAtAbI&lat=48%2E8588897&lon=2%2E3200410217200766&limit=15&categorySet=7317
+2024-01-23 15:59:33 ["f6he1tjrto3sp"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/tomtom/findPlace/construct.sparql
+2024-01-23 15:59:33 ["f6he1tjrto3sp"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:33 ["f6he1tjrto3sp"] service NOTICE: Sending response with Content-Type: text/turtle
+2024-01-23 15:59:33 ["f6he1tjrto3sp"] service NOTICE: --------- Done - SPARQL µS execution --------
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] Context NOTICE: --------- Starting SPARQL micro-service --------
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Query parameter (html special chars encoded) 'service': openweathermap/forecast
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Query parameter (html special chars encoded) 'querymode': sparql
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] Utils NOTICE: Query HTTP header "Content-Type": application/x-www-form-urlencoded
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] Utils NOTICE: Query HTTP header "Accept": application/sparql-results+json
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Client SPARQL query (html special chars encoded):
+PREFIX geo:&lt;http://www.w3.org/2003/01/geo/wgs84_pos#&gt; PREFIX schema:&lt;http://schema.org/#&gt; PREFIX :&lt;http://ns.inria.fr/sparql-micro-service/api#&gt; PREFIX xml:&lt;http://www.w3.org/XML/1998/namespace&gt; PREFIX xsd:&lt;http://www.w3.org/2001/XMLSchema#&gt; PREFIX rdfs:&lt;http://www.w3.org/2000/01/rdf-schema#&gt; PREFIX rdf:&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; PREFIX owl:&lt;http://www.w3.org/2002/07/owl#&gt; PREFIX wgs:&lt;https://www.w3.org/2003/01/geo/wgs84_pos#&gt; PREFIX void:&lt;http://rdfs.org/ns/void#&gt; PREFIX vann:&lt;http://purl.org/vocab/vann/&gt; PREFIX time:&lt;http://www.w3.org/2006/time#&gt; PREFIX ssn:&lt;http://www.w3.org/ns/ssn/&gt; PREFIX sosa:&lt;http://www.w3.org/ns/sosa/&gt; PREFIX skos:&lt;http://www.w3.org/2004/02/skos/core#&gt; PREFIX sh:&lt;http://www.w3.org/ns/shacl#&gt; PREFIX qb:&lt;http://purl.org/linked-data/cube#&gt; PREFIX prov:&lt;http://www.w3.org/ns/prov#&gt; PREFIX prof:&lt;http://www.w3.org/ns/dx/prof/&gt; PREFIX org:&lt;http://www.w3.org/ns/org#&gt; PREFIX odrl:&lt;http://www.w3.org/ns/odrl/2/&gt; PREFIX foaf:&lt;http://xmlns.com/foaf/0.1/&gt; PREFIX doap:&lt;http://usefulinc.com/ns/doap#&gt; PREFIX dcam:&lt;http://purl.org/dc/dcam/&gt; PREFIX dcterms:&lt;http://purl.org/dc/terms/&gt; PREFIX dcmitype:&lt;http://purl.org/dc/dcmitype/&gt; PREFIX dcat:&lt;http://www.w3.org/ns/dcat#&gt; PREFIX dc:&lt;http://purl.org/dc/elements/1.1/&gt; PREFIX csvw:&lt;http://www.w3.org/ns/csvw#&gt; PREFIX brick:&lt;https://brickschema.org/schema/Brick#&gt; SELECT REDUCED * WHERE {
+                ?forecast schema:temp ?temp ;
+                schema:dt_txt ?dt_txt ;
+                schema:feels_like ?feels_like ;
+                schema:description ?description ;
+                schema:temp_min ?temp_min ;
+                schema:temp_max ?temp_max ;
+                schema:humidity ?humidity ;
+                schema:icon ?icon ;
+                schema:dt ?dt
+            }
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Will query the Web API with arguments: Array
+(
+    [city] => paris
+)
+
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Web API query string: api.openweathermap.org/data/2.5/forecast?q=paris&appid=d898a496f42850738d98ee8f6c3bf71a&units=metric
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Executing SPARQL CONSTRUCT query from file: /services/openweathermap/forecast/construct.sparql
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Evaluating client SPARQL query against temporary graph...
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: Sending response with Content-Type: application/sparql-results+json
+2024-01-23 15:59:34 ["gmjr9pflnn1kl"] service NOTICE: --------- Done - SPARQL µS execution --------
